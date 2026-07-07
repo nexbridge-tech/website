@@ -1,1 +1,1 @@
-console.log("NexBridge Website Loaded");
+console.log('NexBridge v1 loaded');
