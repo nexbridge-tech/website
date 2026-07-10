@@ -16,8 +16,6 @@ this.counter();
 
 this.smoothScroll();
 
-this.activeMenu();
-
 this.backTop();
 
 this.mobileMenu();

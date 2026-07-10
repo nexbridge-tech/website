@@ -453,6 +453,122 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
 
 }
 
+.brand-logo{
+
+    height:44px;
+
+    display:block;
+
+}
+
+.footer-inner{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    padding-bottom:30px;
+
+}
+
+.footer-logo{
+
+    height:30px;
+
+    display:block;
+
+}
+
+/* =====================================================
+   PHOTO PLACEHOLDER
+===================================================== */
+
+.photo-placeholder{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    aspect-ratio:4/3;
+
+    background:repeating-linear-gradient(45deg,#F1F3F6,#F1F3F6 10px,#E7EAEE 10px,#E7EAEE 20px);
+
+    border:1.5px dashed #C6CCD4;
+
+    border-radius:12px;
+
+    color:#8C97A3;
+
+    margin-bottom:20px;
+
+}
+
+.photo-placeholder svg{
+
+    width:28px;
+
+    height:28px;
+
+    stroke:#8C97A3;
+
+}
+
+.photo-placeholder span{
+
+    font-size:11.5px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.06em;
+
+}
+
+.avatar-placeholder{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:repeating-linear-gradient(45deg,#F1F3F6,#F1F3F6 6px,#E7EAEE 6px,#E7EAEE 12px);
+
+    border:1.5px dashed #C6CCD4;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+}
+
+.avatar-placeholder svg{
+
+    width:18px;
+
+    height:18px;
+
+    stroke:#8C97A3;
+
+}
+
 /* ================= MENU ================= */
 
 .nav-menu{
@@ -506,6 +622,126 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
 .nav-menu a:hover::after{
 
     width:100%;
+
+}
+
+.nav-menu a.active{
+
+    color:var(--primary);
+
+}
+
+.nav-menu a.active::after{
+
+    width:100%;
+
+}
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.form-row{
+
+    display:flex;
+
+    gap:22px;
+
+    flex-wrap:wrap;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+}
+
+.form-row label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    font-family:inherit;
+
+    font-size:15px;
+
+    color:var(--dark);
+
+    background:var(--white);
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:var(--accent);
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+}
+
+.contact-form button{
+
+    align-self:flex-start;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+@media (max-width:600px){
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
 
 }
 
@@ -712,7 +948,7 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
 
     font-family:var(--font-mono);
 
-    font-size:13px;
+    font-size:14.5px;
 
     letter-spacing:.1em;
 
@@ -720,7 +956,7 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
 
     color:var(--accent);
 
-    margin-bottom:22px;
+    margin-bottom:24px;
 
 }
 
@@ -738,9 +974,9 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
 
 .hero-banner h1{
 
-    font-size:clamp(32px,5vw,56px);
+    font-size:clamp(40px,6.2vw,68px);
 
-    line-height:1.14;
+    line-height:1.1;
 
     font-weight:800;
 
@@ -766,13 +1002,13 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
 
 .hero-banner .lead{
 
-    font-size:clamp(16px,1.6vw,19px);
+    font-size:clamp(17px,1.8vw,21px);
 
     line-height:1.75;
 
     color:rgba(255,255,255,.78);
 
-    max-width:560px;
+    max-width:600px;
 
     margin-bottom:36px;
 
@@ -825,6 +1061,16 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
     padding:26px 12px;
 
     border-left:1px solid rgba(255,255,255,.08);
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+.hero-strip-item:hover{
+
+    background:rgba(255,255,255,.05);
 
 }
 
@@ -1053,6 +1299,196 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
     font-size:14.5px;
 
     color:white;
+
+}
+
+/* =====================================================
+   PAGE HEADER (mini hero for sub-pages)
+===================================================== */
+
+.page-header{
+
+    position:relative;
+
+    background:linear-gradient(160deg,#0A2342 0%,#0D2C52 45%,var(--primary-deep) 100%);
+
+    color:white;
+
+    overflow:hidden;
+
+    padding:56px 0;
+
+    text-align:center;
+
+}
+
+.page-header .hero-glow{
+
+    width:420px;
+
+    height:420px;
+
+    top:-160px;
+
+    right:-140px;
+
+}
+
+.page-header .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.page-header span.hero-eyebrow{
+
+    justify-content:center;
+
+}
+
+.page-header h1{
+
+    font-size:clamp(30px,4.4vw,46px);
+
+    font-weight:800;
+
+    margin-bottom:12px;
+
+}
+
+.page-header p{
+
+    font-size:16px;
+
+    color:rgba(255,255,255,.75);
+
+    max-width:600px;
+
+    margin:0 auto;
+}
+
+/* =====================================================
+   EXPLORE GRID (click-through cards, used on Home)
+===================================================== */
+
+.explore-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+.explore-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:32px;
+
+    transition:var(--transition);
+
+    text-decoration:none;
+
+    color:inherit;
+}
+
+.explore-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-md);
+
+    border-color:rgba(0,174,239,.25);
+}
+
+.explore-card .explore-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    background:var(--primary);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.explore-card .explore-icon svg{
+
+    width:24px;
+
+    height:24px;
+
+    stroke:white;
+
+}
+
+.explore-card h3{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+}
+
+.explore-card p{
+
+    font-size:14.5px;
+
+    color:var(--gray);
+
+    flex-grow:1;
+}
+
+.explore-card .explore-link{
+
+    font-family:var(--font-mono);
+
+    font-size:12.5px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.05em;
+
+    color:var(--accent);
+
+    font-weight:700;
+
+}
+
+@media (max-width:900px){
+
+    .explore-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media (max-width:600px){
+
+    .explore-grid{
+        grid-template-columns:1fr;
+    }
 
 }
 
@@ -2082,6 +2518,20 @@ PARTNER LOGOS
     box-shadow:var(--shadow-md);
 
 }
+.author{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
 /* =====================================================
 QUOTE
 ===================================================== */

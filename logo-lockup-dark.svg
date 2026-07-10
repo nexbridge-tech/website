@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72">
+<g transform="translate(0,0)">
+<path d="M18 20 h16 v10 a5 5 0 0 0 0 10 v10 h-16 z" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<path d="M54 20 h-16 v10 a5 5 0 0 1 0 10 v10 h16 z" fill="none" stroke="#5B9BD5" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<text x="86" y="46" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34">
+<tspan fill="#FFFFFF">Nex</tspan><tspan fill="#5B9BD5">Bridge</tspan>
+</text>
+</svg>
