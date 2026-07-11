@@ -1849,6 +1849,685 @@ INDUSTRY CARD
     margin-bottom:15px;
 
 }
+
+.industry-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.case-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.industry-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:36px 30px;
+
+    margin-top:20px;
+
+}
+
+.industry-list h3{
+
+    color:var(--primary);
+
+    margin-bottom:8px;
+
+}
+
+.industry-list p{
+
+    color:var(--gray);
+
+}
+
+/* =====================================================
+   SITE-WIDE: undefined grid/card classes fix
+   (HTML referenced these everywhere; CSS never defined them)
+===================================================== */
+
+.why-card,
+.capability,
+.challenge-card,
+.engineer-card,
+.philosophy-card,
+.value-box,
+.flow-item,
+.knowledge-card{
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:30px;
+
+    transition:var(--transition);
+
+}
+
+.why-card:hover,
+.capability:hover,
+.challenge-card:hover,
+.engineer-card:hover,
+.philosophy-card:hover,
+.value-box:hover,
+.flow-item:hover,
+.knowledge-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-md);
+
+    border-color:rgba(0,174,239,.25);
+
+}
+
+.why-card h3,
+.capability h3,
+.challenge-card h3,
+.engineer-card h3,
+.philosophy-card h3,
+.value-box h3,
+.flow-item h3,
+.knowledge-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+    font-size:19px;
+
+}
+
+.why-card p,
+.capability p,
+.challenge-card p,
+.engineer-card p,
+.philosophy-card p,
+.value-box p,
+.flow-item p,
+.knowledge-card p{
+
+    color:var(--gray);
+
+    font-size:14.5px;
+
+    line-height:1.7;
+
+}
+
+.why-number{
+
+    font-family:var(--font-mono);
+
+    font-size:26px;
+
+    font-weight:800;
+
+    color:var(--accent);
+
+    margin-bottom:14px;
+
+}
+
+.tech-card{
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.tech-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.tech-icon{
+
+    font-size:34px;
+
+    margin-bottom:16px;
+
+}
+
+.tech-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+    font-size:18px;
+
+}
+
+.tech-card p{
+
+    color:var(--gray);
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+.stat-card{
+
+    text-align:center;
+
+}
+
+.stat-number{
+
+    font-family:var(--font-mono);
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+}
+
+.stat-label{
+
+    color:var(--gray);
+
+    font-size:14px;
+
+    margin-top:8px;
+
+}
+
+.insight-card{
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:28px;
+
+    transition:var(--transition);
+
+}
+
+.insight-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.insight-card .date{
+
+    font-family:var(--font-mono);
+
+    font-size:12px;
+
+    color:var(--accent);
+
+    font-weight:700;
+
+    letter-spacing:.05em;
+
+    margin-bottom:10px;
+
+}
+
+.insight-card h3{
+
+    color:var(--primary);
+
+    font-size:17px;
+
+    margin-bottom:8px;
+
+}
+
+.insight-card p{
+
+    color:var(--gray);
+
+    font-size:14px;
+
+}
+
+.resource-card,
+
+.partner-logo,
+
+.brand-box{
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    padding:22px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+.resource-card:hover,
+
+.partner-logo:hover,
+
+.brand-box:hover{
+
+    border-color:rgba(0,174,239,.35);
+
+    color:var(--accent);
+
+}
+
+.finder-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+.finder-grid a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    border:1px solid var(--border);
+
+    font-weight:600;
+
+    font-size:14.5px;
+
+    color:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+.finder-grid a:hover{
+
+    border-color:var(--accent);
+
+    background:var(--accent-soft);
+
+}
+
+.industry-icon{
+
+    font-size:36px;
+
+    margin-bottom:16px;
+
+}
+
+.case-tag{
+
+    display:inline-block;
+
+    font-family:var(--font-mono);
+
+    font-size:11.5px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.06em;
+
+    color:var(--secondary);
+
+    background:var(--accent-soft);
+
+    padding:5px 12px;
+
+    border-radius:999px;
+
+    margin-bottom:14px;
+
+}
+
+.case-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+    font-size:19px;
+
+}
+
+.case-card p{
+
+    color:var(--gray);
+
+    font-size:14.5px;
+
+    line-height:1.7;
+
+    margin-bottom:16px;
+
+}
+
+.case-card a{
+
+    font-weight:700;
+
+    font-size:14px;
+
+    color:var(--accent);
+
+}
+
+.journey-line{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:26px;
+
+    position:relative;
+
+}
+
+.journey-step{
+
+    text-align:center;
+
+    padding:24px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+}
+
+.journey-step h3{
+
+    font-family:var(--font-mono);
+
+    color:var(--accent);
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+.journey-step h4{
+
+    color:var(--primary);
+
+    font-size:15px;
+
+}
+
+.solution-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:26px;
+
+}
+
+.solution-item{
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:30px;
+
+    transition:var(--transition);
+
+}
+
+.solution-item:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-md);
+
+    border-color:rgba(0,174,239,.25);
+
+}
+
+.solution-item h3{
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+    font-size:19px;
+
+}
+
+.solution-item p{
+
+    color:var(--gray);
+
+    font-size:14.5px;
+
+    line-height:1.8;
+
+}
+
+.global-grid,
+.program-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.global-grid h3,
+.program-grid h3{
+
+    color:var(--primary);
+
+    margin-bottom:16px;
+
+}
+
+.global-grid ul,
+.program-grid ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.global-grid li,
+.program-grid li{
+
+    color:var(--gray);
+
+    padding-left:18px;
+
+    position:relative;
+
+}
+
+.global-grid li::before,
+.program-grid li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:9px;
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+}
+
+@media (max-width:768px){
+
+    .journey-line{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .solution-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .global-grid,
+    .program-grid{
+        grid-template-columns:1fr;
+        gap:26px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .journey-line,
+    .solution-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ---- Grid layouts ---- */
+
+.why-grid,
+.capability-grid,
+.challenge-grid,
+.engineer-grid,
+.values-grid,
+.stats-grid,
+.bridge-flow,
+.knowledge-grid,
+.partner-grid,
+.resource-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:26px;
+
+}
+
+.tech-grid,
+.philosophy-grid,
+.insight-grid,
+.brand-wall{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:26px;
+
+}
+
+@media (max-width:992px){
+
+    .why-grid, .capability-grid, .challenge-grid, .engineer-grid,
+    .values-grid, .stats-grid, .bridge-flow, .knowledge-grid,
+    .partner-grid, .resource-grid,
+    .tech-grid, .philosophy-grid, .insight-grid, .brand-wall{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:600px){
+
+    .why-grid, .capability-grid, .challenge-grid, .engineer-grid,
+    .values-grid, .stats-grid, .bridge-flow, .knowledge-grid,
+    .partner-grid, .resource-grid,
+    .tech-grid, .philosophy-grid, .insight-grid, .brand-wall{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .industry-grid,
+    .case-grid,
+    .industry-list{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:600px){
+
+    .industry-grid,
+    .case-grid,
+    .industry-list{
+        grid-template-columns:1fr;
+    }
+
+}
 /* =====================================================
 BACKGROUND
 ===================================================== */
@@ -3165,6 +3844,20 @@ height:72px;
 
 }
 
+.brand-logo{
+
+height:38px;
+
+}
+
+.header .btn-primary{
+
+padding:10px 18px;
+
+font-size:13px;
+
+}
+
 .nav-menu{
 
 display:none;
@@ -3197,7 +3890,7 @@ flex-direction:column;
 
 }
 
-.btn{
+.hero-cta .btn{
 
 width:100%;
 
@@ -3250,6 +3943,28 @@ width:94%;
 .section-title h2{
 
 font-size:32px;
+
+}
+
+.brand-logo{
+
+height:32px;
+
+}
+
+.header .btn-primary{
+
+padding:9px 14px;
+
+font-size:12.5px;
+
+}
+
+.menu-toggle{
+
+width:40px;
+
+height:40px;
 
 }
 
@@ -3379,6 +4094,8 @@ display:flex;
 .nav-menu{
 
 position:fixed;
+
+display:flex;
 
 top:72px;
 
