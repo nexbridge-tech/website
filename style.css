@@ -431,6 +431,16 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
 
     align-items:center;
 
+    gap:12px;
+
+}
+
+.navbar .btn-primary{
+
+    white-space:nowrap;
+
+    flex-shrink:0;
+
 }
 
 /* ================= LOGO ================= */
@@ -444,6 +454,8 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
     color:var(--primary);
 
     letter-spacing:.5px;
+
+    flex-shrink:0;
 
 }
 
@@ -692,6 +704,31 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
     gap:8px;
 
     cursor:pointer;
+
+    white-space:nowrap;
+
+}
+
+.form-row label input[type="radio"]{
+
+    width:18px;
+
+    height:18px;
+
+    flex-shrink:0;
+
+    margin:0;
+
+    accent-color:var(--accent);
+
+}
+
+@media (max-width:600px){
+
+    .form-row{
+        flex-direction:column;
+        gap:16px;
+    }
 
 }
 
@@ -4060,6 +4097,8 @@ MOBILE MENU
     width:48px;
 
     height:48px;
+
+    flex-shrink:0;
 
     border-radius:12px;
 
