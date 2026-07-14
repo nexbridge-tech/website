@@ -1,0 +1,73 @@
+<h1>NexBridge Admin Setup Guide</h1>
+<p>This adds a real admin panel for writing Knowledge articles — no more
+asking Claude to hand-edit HTML for every new post. Everything else
+(Home, Solutions, Industries, Partners, About, Contact) stays exactly
+as it was: plain HTML files, edited the same way as before.</p>
+<h2>What changed</h2>
+<ul>
+<li><code>knowledge.html</code> is no longer a finished page — it's now a <strong>template</strong>
+that lists whatever articles exist in <code>content/knowledge/</code>.</li>
+<li>New folders: <code>_includes/</code> (page templates), <code>content/knowledge/</code>
+(your articles, as markdown files), <code>admin/</code> (the login panel).</li>
+<li>New files: <code>.eleventy.js</code> (build config), <code>package.json</code>,
+<code>netlify.toml</code>, <code>.gitignore</code>, <code>.eleventyignore</code>.</li>
+<li>Your <code>assets/</code> folder is untouched — nothing here changes it.</li>
+</ul>
+<h2>Step 1 — Test it locally first (important)</h2>
+<p>I was not able to run this build myself (no internet access in my
+environment), so please test locally before deploying. In your project
+folder:</p>
+<pre><code>npm install
+npm start
+</code></pre>
+<p>This should start a local server (usually <code>http://localhost:8080</code>).
+Check that:</p>
+<ul>
+<li>The homepage and other pages still look right</li>
+<li><code>/knowledge.html</code> shows the 3 draft articles</li>
+<li>Clicking an article opens its own page</li>
+</ul>
+<p><strong>If you get an error</strong>, copy the exact error message and send it to
+me — that's the fastest way for us to fix it together.</p>
+<h2>Step 2 — Push to GitHub as usual</h2>
+<pre><code>git add .
+git commit -m &quot;Add Eleventy build and admin CMS&quot;
+git push
+</code></pre>
+<h2>Step 3 — Move hosting to Netlify</h2>
+<p>Your site is currently on GitHub Pages (the <code>CNAME</code> file). To get the
+admin panel working, it needs to move to Netlify, since that's what
+powers the login system:</p>
+<ol>
+<li>Sign up at netlify.com (free), connect your GitHub repo.</li>
+<li>Netlify should auto-detect the build settings from <code>netlify.toml</code>
+(build command <code>npm run build</code>, publish folder <code>_site</code>). Deploy.</li>
+<li>In Netlify's site settings → Domain management, add your domain
+<code>nexbridge.vn</code> and follow their DNS instructions (this replaces
+your current GitHub Pages DNS setup).</li>
+</ol>
+<h2>Step 4 — Turn on the admin login</h2>
+<p>In Netlify's dashboard for this site:</p>
+<ol>
+<li>Go to <strong>Site settings → Identity</strong> → click <strong>Enable Identity</strong>.</li>
+<li>Under Identity settings, set registration to <strong>Invite only</strong> (so
+random people can't sign themselves up as admin).</li>
+<li>Go to <strong>Site settings → Identity → Services</strong> → enable <strong>Git Gateway</strong>.</li>
+<li>Go to the <strong>Identity</strong> tab → <strong>Invite users</strong> → invite your own
+email address. You'll get an email to set a password.</li>
+</ol>
+<h2>Step 5 — Log in and write</h2>
+<p>Go to <code>nexbridge.vn/admin/</code>, log in, and you should see a &quot;Knowledge
+Articles&quot; collection with the 3 draft posts already there. Try editing
+one, or create a new one, and hit publish.</p>
+<h2>Known limitations right now</h2>
+<ul>
+<li>The <code>Draft</code> checkbox in the admin panel is currently just a label —
+it doesn't yet hide draft posts from the live site automatically.
+Everything you create will be publicly visible once published. If
+you want real draft/live separation, that's a quick follow-up.</li>
+<li>Social share images (<code>og-image.jpg</code>) still don't exist — see our
+earlier conversation about that.</li>
+<li><code>robots.txt</code> / <code>sitemap.xml</code> reference <code>nexbridge.vn/knowledge.html</code>
+style URLs — these still work fine under the new build.</li>
+</ul>

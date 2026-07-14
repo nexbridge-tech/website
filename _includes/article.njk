@@ -1,0 +1,31 @@
+---
+layout: base.njk
+permalink: "knowledge/{{ page.fileSlug }}.html"
+---
+<section class="page-header">
+<div class="hero-glow"></div>
+<div class="container">
+<span class="hero-eyebrow">{{ tags | join(" · ") }}</span>
+<h1>{{ title }}</h1>
+</div>
+</section>
+
+<article class="section">
+<div class="container" style="max-width:760px">
+
+{% if image %}
+<img class="card-photo" style="aspect-ratio:16/9" src="{{ image }}" alt="{{ title }}">
+{% endif %}
+
+<div class="blog-meta" style="margin-bottom:24px">{{ date | readableDate }}</div>
+
+<div class="article-body">
+{{ content | safe }}
+</div>
+
+<div style="margin-top:48px">
+<a href="/knowledge.html" class="btn btn-outline">&larr; Back To Knowledge</a>
+</div>
+
+</div>
+</article>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description or excerpt }}">
+<link rel="canonical" href="https://nexbridge.vn{{ page.url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NexBridge Technology">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description or excerpt }}">
+<meta property="og:url" content="https://nexbridge.vn{{ page.url }}">
+<meta property="og:image" content="https://nexbridge.vn/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description or excerpt }}">
+<meta name="twitter:image" content="https://nexbridge.vn/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="scroll-progress"></div>
+<header class="header"><div class="container navbar">
+<a href="/index.html" class="brand">
+    <svg class="brand-logo" viewBox="0 0 320 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NexBridge Technology">
+        <path d="M10 12 h22 v16 a7 7 0 0 0 0 14 v16 h-22 z" fill="none" stroke="#1B2A4A" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M62 12 h-22 v16 a7 7 0 0 1 0 14 v16 h22 z" fill="none" stroke="#5B9BD5" stroke-width="3.5" stroke-linejoin="round"/>
+        <text x="96" y="46" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="36"><tspan fill="#1B2A4A">Nex</tspan><tspan fill="#5B9BD5">Bridge</tspan></text>
+    </svg>
+</a>
+<nav aria-label="Primary Navigation">
+<ul class="nav-menu">
+<li><a href="/index.html">Home</a></li>
+
+<li><a href="/solutions.html">Solutions</a></li>
+
+<li><a href="/industries.html">Industries</a></li>
+
+<li><a href="/knowledge.html" class="active">Knowledge</a></li>
+
+<li><a href="/about.html">About</a></li>
+
+</ul>
+</nav>
+<button class="menu-toggle">☰</button>
+<a href="/contact.html" class="btn btn-primary">Contact Us</a>
+</div></header><main>
+{{ content | safe }}
+</main>
+<footer class="footer"><div class="container footer-inner">
+<svg class="footer-logo" viewBox="0 0 320 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NexBridge Technology">
+    <path d="M10 12 h22 v16 a7 7 0 0 0 0 14 v16 h-22 z" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M62 12 h-22 v16 a7 7 0 0 1 0 14 v16 h22 z" fill="none" stroke="#5B9BD5" stroke-width="3.5" stroke-linejoin="round"/>
+    <text x="96" y="46" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="36"><tspan fill="#FFFFFF">Nex</tspan><tspan fill="#5B9BD5">Bridge</tspan></text>
+</svg>
+<span>&copy; NexBridge Technology</span>
+</div></footer>
+<script src="/script.js"></script>
+</body></html>

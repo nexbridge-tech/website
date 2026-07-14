@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+site_url: https://nexbridge.vn
+display_url: https://nexbridge.vn
+
+collections:
+  - name: "knowledge"
+    label: "Knowledge Articles"
+    folder: "content/knowledge"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "article.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "yyyy-MM-dd" }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options:
+          - "Engineering Journal"
+          - "Field Notes"
+          - "Lessons Learned"
+          - "Technical Guides"
+          - "Career Development"
+          - "Manufacturing"
+          - "Semiconductor"
+          - "AI Infrastructure"
+          - "Industrial Automation"
+          - "Thermal Management"
+          - "Industrial Networking"
+          - "Supply Chain"
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "Short summary shown on the Knowledge listing page and in search results." }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true, hint: "Draft articles are hidden from the live site until this is turned off." }
+      - { label: "Body", name: "body", widget: "markdown" }
