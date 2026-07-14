@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72">
-<path d="M10 12 h22 v16 a7 7 0 0 0 0 14 v16 h-22 z" fill="none" stroke="#1B2A4A" stroke-width="3.5" stroke-linejoin="round"/>
-<path d="M62 12 h-22 v16 a7 7 0 0 1 0 14 v16 h22 z" fill="none" stroke="#5B9BD5" stroke-width="3.5" stroke-linejoin="round"/>
-<text x="96" y="46" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="36"><tspan fill="#1B2A4A">Nex</tspan><tspan fill="#5B9BD5">Bridge</tspan></text>
-</svg>
