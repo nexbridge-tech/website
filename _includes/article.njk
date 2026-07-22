@@ -5,7 +5,7 @@ permalink: "knowledge/{{ page.fileSlug }}.html"
 <section class="page-header">
 <div class="hero-glow"></div>
 <div class="container">
-<span class="hero-eyebrow">{{ tags | join(" · ") }}</span>
+<span class="hero-eyebrow">{% if tags %}{{ tags | join(" · ") }}{% endif %}</span>
 <h1>{{ title }}</h1>
 </div>
 </section>

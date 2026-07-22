@@ -1,0 +1,128 @@
+seo_title: "NexBridge Technology | Connecting Global Technology With Industrial Excellence"
+seo_description: "NexBridge bridges Vietnamese manufacturers with global technology partners to solve real engineering problems."
+
+hero:
+  eyebrow: "Vietnam ⇆ Global Technology Network"
+  headline_before: "Connecting"
+  headline_accent: "Global Technology"
+  headline_after: "with Industrial Excellence"
+  lead: "NexBridge helps Vietnamese manufacturers and system integrators solve real engineering problems by matching them with the right components, materials and technology partners — from semiconductors to thermal materials to automation."
+  cta_primary_text: "Talk To An Engineer"
+  cta_primary_link: "contact.html"
+  cta_secondary_text: "Explore Solutions"
+  cta_secondary_link: "solutions.html"
+  strip:
+    - icon: server
+      label: "AI Infrastructure & Data Centers"
+      link: "solutions.html"
+    - icon: chip
+      label: "Semiconductor Solutions"
+      link: "solutions.html"
+    - icon: robot
+      label: "Industrial Automation & Smart Manufacturing"
+      link: "solutions.html"
+    - icon: thermometer
+      label: "Thermal Management & Cooling Solutions"
+      link: "solutions.html"
+    - icon: leaf
+      label: "Energy & Sustainability"
+      link: "solutions.html"
+    - icon: handshake
+      label: "Technology Partnership"
+      link: "solutions.html"
+
+design_services:
+  eyebrow: "ENGINEERING SUPPORT"
+  title: "Beyond Sourcing — Real Design Support"
+  subtitle: "We don't just connect you to parts. Our team works alongside yours on the engineering itself."
+  cards:
+    - image: "assets/images/design-pcba.jpg"
+      title: "PCBA Design Support"
+      description: "From schematic capture to layout, we help you design PCBAs that are manufacturable, testable and ready to scale — not just functional on a bench."
+    - image: "assets/images/design-review.jpg"
+      title: "Design Review"
+      description: "A second set of expert eyes before you commit to tooling. We catch signal integrity, thermal and DFM issues while they're still cheap to fix."
+    - image: "assets/images/design-aspice.jpg"
+      title: "ASPICE Process Alignment"
+      description: "For automotive programs, we help align your development process with Automotive SPICE requirements from the start — not as an audit afterthought."
+
+explore:
+  eyebrow: "WHERE TO GO NEXT"
+  title: "Explore NexBridge"
+  cards:
+    - icon: layers
+      title: "Solutions"
+      description: "Engineering consulting, thermal management, AI infrastructure, automation, networking and semiconductor sourcing."
+      link_text: "View Solutions →"
+      link: "solutions.html"
+    - icon: factory
+      title: "Industries"
+      description: "Where we work: automotive, electronics manufacturing, industrial equipment and renewable energy."
+      link_text: "View Industries →"
+      link: "industries.html"
+    - icon: book
+      title: "Knowledge"
+      description: "Field notes and engineering guides drawn from real projects, published as we write them."
+      link_text: "Read Insights →"
+      link: "knowledge.html"
+    - icon: info
+      title: "About"
+      description: "Our story, mission, engineering philosophy and how we work with customers."
+      link_text: "Our Story →"
+      link: "about.html"
+    - icon: network
+      title: "Partners"
+      description: "The global suppliers we bridge you to, from semiconductors to thermal materials."
+      link_text: "Meet Our Partners →"
+      link: "partners.html"
+    - icon: mail
+      title: "Contact"
+      description: "New inquiry, partnership or technical support — tell us what you need."
+      link_text: "Get In Touch →"
+      link: "contact.html"
+
+feature_bar:
+  - icon: globe
+    label: "Global Technologies"
+  - icon: puzzle
+    label: "Tailored Solutions"
+  - icon: shield
+    label: "Reliable Partnership"
+  - icon: trending
+    label: "Sustainable Value"
+
+challenge_finder:
+  eyebrow: "START HERE"
+  title: "What Challenge Are You Solving?"
+  subtitle: "Select the area that best matches your current engineering need."
+  chips:
+    - emoji: "🔥"
+      label: "Reduce Heat"
+      link: "solutions.html"
+    - emoji: "⚡"
+      label: "Save Energy"
+      link: "solutions.html"
+    - emoji: "🏭"
+      label: "Factory Automation"
+      link: "solutions.html"
+    - emoji: "🤖"
+      label: "AI Infrastructure"
+      link: "solutions.html"
+    - emoji: "📡"
+      label: "Industrial Connectivity"
+      link: "solutions.html"
+    - emoji: "🔬"
+      label: "Semiconductor"
+      link: "solutions.html"
+    - emoji: "🧪"
+      label: "Engineering Materials"
+      link: "solutions.html"
+    - emoji: "💡"
+      label: "Need Technical Advice"
+      link: "solutions.html"
+
+cta:
+  title: "Ready To Build Something Great?"
+  text: "Let's discuss your next engineering project."
+  button_text: "Contact NexBridge"
+  button_link: "contact.html"

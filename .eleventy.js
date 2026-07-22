@@ -1,9 +1,9 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addDataExtension("yml", (contents) => require("js-yaml").load(contents));
 
   // Static pages that stay hand-coded HTML - just copy them through untouched
-  eleventyConfig.addPassthroughCopy("index.html");
   eleventyConfig.addPassthroughCopy("solutions.html");
   eleventyConfig.addPassthroughCopy("industries.html");
   eleventyConfig.addPassthroughCopy("partners.html");
@@ -42,6 +42,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: ".",
       includes: "_includes",
+      data: "_data",
       output: "_site",
     },
     templateFormats: ["md", "njk"],

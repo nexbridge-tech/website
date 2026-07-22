@@ -1,0 +1,186 @@
+---
+layout: base.njk
+permalink: "index.html"
+title: "NexBridge Technology | Connecting Global Technology With Industrial Excellence"
+description: "NexBridge bridges Vietnamese manufacturers with global technology partners to solve real engineering problems."
+---
+{% set icons = {
+  "server": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r=".6" fill="currentColor" stroke="none"/><circle cx="7" cy="17" r=".6" fill="currentColor" stroke="none"/></svg>',
+  "chip": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.5"/><line x1="9" y1="2" x2="9" y2="6"/><line x1="15" y1="2" x2="15" y2="6"/><line x1="9" y1="18" x2="9" y2="22"/><line x1="15" y1="18" x2="15" y2="22"/><line x1="2" y1="9" x2="6" y2="9"/><line x1="2" y1="15" x2="6" y2="15"/><line x1="18" y1="9" x2="22" y2="9"/><line x1="18" y1="15" x2="22" y2="15"/></svg>',
+  "robot": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.2"/><path d="M6 15.8V11l6-3 5 2v3"/><circle cx="17" cy="8" r="2.2"/></svg>',
+  "thermometer": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a2 2 0 0 0-2 2v9.2a4 4 0 1 0 4 0V5a2 2 0 0 0-2-2z"/><line x1="12" y1="8" x2="12" y2="14"/></svg>',
+  "leaf": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c8 0 14-6 14-14V4h-2C8 4 4 10 4 18z"/><path d="M4 20 12 12"/></svg>',
+  "handshake": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l4-3 3 2 3-2 3 2 4-3"/><path d="M6 9l3 8 3-2 3 2 3-8"/></svg>',
+  "layers": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 3 8 12 13 21 8 12 3"/><polyline points="3 13 12 18 21 13"/></svg>',
+  "factory": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l6 4v-4l6 4V6l6 4v11z"/><line x1="3" y1="21" x2="21" y2="21"/></svg>',
+  "book": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5c2-1 5-1 7 0v14c-2-1-5-1-7 0z"/><path d="M22 5c-2-1-5-1-7 0v14c2-1 5-1 7 0z"/></svg>',
+  "info": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="16" x2="12" y2="11"/><circle cx="12" cy="8" r=".6" fill="currentColor" stroke="none"/></svg>',
+  "network": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>',
+  "mail": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
+  "globe": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>',
+  "puzzle": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h4V6a2 2 0 1 1 4 0v2h4a1 1 0 0 1 1 1v4h-2a2 2 0 1 0 0 4h2v3a1 1 0 0 1-1 1h-4v-2a2 2 0 1 0-4 0v2H5a1 1 0 0 1-1-1v-4h2a2 2 0 1 0 0-4H4z"/></svg>',
+  "shield": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>',
+  "trending": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>'
+} %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NexBridge Technology",
+  "url": "https://nexbridge.vn",
+  "logo": "https://nexbridge.vn/assets/logo/logo-lockup-light.svg",
+  "description": "NexBridge Technology connects Vietnamese manufacturers and system integrators with global technology partners to solve real engineering problems, spanning semiconductors, thermal management, AI infrastructure and industrial automation.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hanoi",
+    "addressCountry": "VN"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/nexbridge-technologies-solution"
+  ]
+}
+</script>
+<section class="hero-banner" id="home">
+
+    <div class="hero-glow"></div>
+
+    <div class="hero-network">
+        <svg viewBox="0 0 900 520" preserveAspectRatio="xMaxYMid slice">
+            <g stroke="#00AEEF" stroke-width="1" opacity=".35">
+                <line x1="560" y1="90" x2="700" y2="60"/>
+                <line x1="700" y1="60" x2="830" y2="140"/>
+                <line x1="560" y1="90" x2="640" y2="200"/>
+                <line x1="640" y1="200" x2="800" y2="230"/>
+                <line x1="640" y1="200" x2="560" y2="320"/>
+                <line x1="560" y1="320" x2="700" y2="400"/>
+                <line x1="700" y1="400" x2="850" y2="380"/>
+                <line x1="800" y1="230" x2="850" y2="380"/>
+                <line x1="800" y1="230" x2="830" y2="140"/>
+                <line x1="560" y1="320" x2="480" y2="230"/>
+                <line x1="480" y1="230" x2="560" y2="90"/>
+            </g>
+            <g fill="#00AEEF">
+                <circle class="hero-node" cx="560" cy="90" r="4" style="animation-delay:0s"/>
+                <circle class="hero-node" cx="700" cy="60" r="3" style="animation-delay:.4s"/>
+                <circle class="hero-node" cx="830" cy="140" r="5" style="animation-delay:.8s"/>
+                <circle class="hero-node" cx="640" cy="200" r="4" style="animation-delay:1.2s"/>
+                <circle class="hero-node" cx="800" cy="230" r="3.5" style="animation-delay:1.6s"/>
+                <circle class="hero-node" cx="560" cy="320" r="4.5" style="animation-delay:.6s"/>
+                <circle class="hero-node" cx="700" cy="400" r="3.5" style="animation-delay:1s"/>
+                <circle class="hero-node" cx="850" cy="380" r="4" style="animation-delay:1.8s"/>
+                <circle class="hero-node" cx="480" cy="230" r="3" style="animation-delay:2s"/>
+            </g>
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="hero-banner-inner">
+            <span class="hero-eyebrow">{{ home.hero.eyebrow }}</span>
+            <h1>
+                {{ home.hero.headline_before }} <span class="accent-line">{{ home.hero.headline_accent }}</span>
+                {{ home.hero.headline_after }}
+            </h1>
+            <p class="lead">{{ home.hero.lead }}</p>
+            <div class="hero-cta">
+                <a href="{{ home.hero.cta_primary_link }}" class="btn btn-light">{{ home.hero.cta_primary_text }}</a>
+                <a href="{{ home.hero.cta_secondary_link }}" class="btn btn-outline-light">{{ home.hero.cta_secondary_text }}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-strip">
+        <div class="container">
+            <div class="hero-strip-grid">
+                {% for item in home.hero.strip %}
+                <a href="{{ item.link }}" class="hero-strip-item">
+                    {{ icons[item.icon] | safe }}
+                    <span>{{ item.label }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="section-title center">
+<span>{{ home.design_services.eyebrow }}</span>
+<h2>{{ home.design_services.title }}</h2>
+<p>{{ home.design_services.subtitle }}</p>
+</div>
+
+<div class="blog-grid">
+{% for card in home.design_services.cards %}
+<div class="card">
+<img class="card-photo" loading="lazy" src="{{ card.image }}" alt="{{ card.title }}">
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</div>
+{% endfor %}
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="section-title center">
+<span>{{ home.explore.eyebrow }}</span>
+<h2>{{ home.explore.title }}</h2>
+</div>
+
+<div class="explore-grid">
+{% for card in home.explore.cards %}
+<a href="{{ card.link }}" class="explore-card">
+<div class="explore-icon">{{ icons[card.icon] | safe }}</div>
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+<span class="explore-link">{{ card.link_text }}</span>
+</a>
+{% endfor %}
+</div>
+
+</div>
+</section>
+
+<section class="feature-bar">
+    <div class="container">
+        <div class="feature-bar-grid">
+            {% for item in home.feature_bar %}
+            <div class="feature-bar-item">
+                {{ icons[item.icon] | safe }}
+                <span>{{ item.label }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="challenge-finder section">
+<div class="container">
+
+<div class="section-title center">
+<span>{{ home.challenge_finder.eyebrow }}</span>
+<h2>{{ home.challenge_finder.title }}</h2>
+<p>{{ home.challenge_finder.subtitle }}</p>
+</div>
+
+<div class="finder-grid">
+{% for chip in home.challenge_finder.chips %}
+<a href="{{ chip.link }}">{{ chip.emoji }} {{ chip.label }}</a>
+{% endfor %}
+</div>
+
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>{{ home.cta.title }}</h2>
+<p>{{ home.cta.text }}</p>
+<a href="{{ home.cta.button_link }}" class="btn">{{ home.cta.button_text }}</a>
+</div>
+</section>
