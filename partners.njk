@@ -1,0 +1,88 @@
+---
+layout: base.njk
+permalink: "partners.html"
+title: "{{ partners.seo_title }}"
+description: "{{ partners.seo_description }}"
+---
+<section class="page-header">
+<div class="hero-glow"></div>
+<div class="container">
+<span class="hero-eyebrow">{{ partners.page_header.eyebrow }}</span>
+<h1>{{ partners.page_header.title }}</h1>
+<p>{{ partners.page_header.subtitle }}</p>
+</div>
+</section>
+
+<section class="partner-program section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ partners.partner_program.eyebrow }}</span>
+<h2>{{ partners.partner_program.title }}</h2>
+<p>{{ partners.partner_program.subtitle }}</p>
+</div>
+<div class="program-grid">
+{% for col in partners.partner_program.columns %}
+<div>
+<h3>{{ col.title }}</h3>
+<ul>
+{% for item in col.items %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="global section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ partners.global.eyebrow }}</span>
+<h2>{{ partners.global.title }}</h2>
+<p>{{ partners.global.subtitle }}</p>
+</div>
+<div class="global-grid">
+{% for col in partners.global.columns %}
+<div>
+<h3>{{ col.title }}</h3>
+<ul>
+{% for item in col.items %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="partners section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ partners.partners.eyebrow }}</span>
+<h2>{{ partners.partners.title }}</h2>
+<p>{{ partners.partners.subtitle }}</p>
+</div>
+<div class="partner-grid">
+{% for logo in partners.partners.logos %}
+<div class="partner-logo">{{ logo }}</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="brands section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ partners.brands.eyebrow }}</span>
+<h2>{{ partners.brands.title }}</h2>
+<p>{{ partners.brands.subtitle }}</p>
+</div>
+<div class="brand-wall">
+{% for logo in partners.brands.logos %}
+<div class="brand-box">{{ logo }}</div>
+{% endfor %}
+</div>
+</div>
+</section>

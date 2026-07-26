@@ -1,0 +1,139 @@
+---
+layout: base.njk
+permalink: "about.html"
+title: "{{ about.seo_title }}"
+description: "{{ about.seo_description }}"
+---
+{% set micons = {
+  "target": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>',
+  "eye": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>',
+  "compass": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-2 6-6 2 2-6z"/></svg>',
+  "commitment": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>'
+} %}
+<section class="page-header">
+<div class="hero-glow"></div>
+<div class="container">
+<span class="hero-eyebrow">{{ about.page_header.eyebrow }}</span>
+<h1>{{ about.page_header.title }}</h1>
+<p>{{ about.page_header.subtitle }}</p>
+</div>
+</section>
+
+<section class="overview section fade-up">
+<div class="container">
+<div class="overview-grid">
+<div class="overview-desc">
+<span class="small-title">{{ about.overview.small_title }}</span>
+<h2>{{ about.overview.title }}</h2>
+<div class="overview-rule"></div>
+{% for p in about.overview.paragraphs %}
+<p>{{ p }}</p>
+{% endfor %}
+</div>
+<div class="mission-cards">
+{% for card in about.overview.mission_cards %}
+<div class="mission-card">
+<div class="mission-icon">{{ micons[card.icon] | safe }}</div>
+<div>
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</div>
+</section>
+
+<section class="stats">
+<div class="container">
+<div class="section-title center">
+<span>{{ about.stats.eyebrow }}</span>
+<h2>{{ about.stats.title }}</h2>
+<p>{{ about.stats.subtitle }}</p>
+</div>
+<div class="stats-grid">
+{% for item in about.stats.items %}
+<div class="stat-card">
+<div class="stat-number" data-target="{{ item.target }}">0</div>
+<div class="stat-label">{{ item.label }}</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="timeline-company section">
+<div class="container">
+<div class="section-title center">
+<span>{{ about.timeline_company.eyebrow }}</span>
+<h2>{{ about.timeline_company.title }}</h2>
+<p>{{ about.timeline_company.subtitle }}</p>
+</div>
+<div class="journey">
+{% for item in about.timeline_company.items %}
+<div class="journey-item">
+<div class="year">
+{% if item.year == "current" %}<span id="year"></span>{% else %}{{ item.year }}{% endif %}
+</div>
+<div class="content">
+<h3>{{ item.title }}</h3>
+<p>{{ item.description }}</p>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="philosophy section">
+<div class="container">
+<div class="section-title center">
+<span>{{ about.philosophy.eyebrow }}</span>
+<h2>{{ about.philosophy.title }}</h2>
+<p>{{ about.philosophy.subtitle }}</p>
+</div>
+<div class="philosophy-grid">
+{% for card in about.philosophy.cards %}
+<div class="philosophy-card">
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="bridge-way section">
+<div class="container">
+<div class="section-title center">
+<span>{{ about.bridge_way.eyebrow }}</span>
+<h2>{{ about.bridge_way.title }}</h2>
+</div>
+<div class="bridge-flow">
+{% for step in about.bridge_way.steps %}
+<div class="flow-item">
+<h3>{{ step.title }}</h3>
+<p>{{ step.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="values section fade-up">
+<div class="container">
+<div class="section-title">
+<span>{{ about.values.eyebrow }}</span>
+<h2>{{ about.values.title }}</h2>
+</div>
+<div class="values-grid">
+{% for card in about.values.cards %}
+<div class="value-box">
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>

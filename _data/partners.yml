@@ -1,0 +1,51 @@
+seo_title: "Partners | NexBridge Technology"
+seo_description: "NexBridge's global technology partner network, including semiconductor and materials suppliers."
+
+page_header:
+  eyebrow: "Partners"
+  title: "Our Global Technology Network"
+  subtitle: "The suppliers and manufacturers we bridge you to — vetted, trusted, and application-tested."
+
+partner_program:
+  eyebrow: "PARTNER WITH US"
+  title: "Grow Together"
+  subtitle: "NexBridge welcomes technology vendors, manufacturers and engineering companies looking for long-term cooperation."
+  columns:
+    - title: "Technology Partners"
+      items: ["Manufacturers", "Component Suppliers", "Software Providers", "Industrial Brands"]
+    - title: "Business Partners"
+      items: ["System Integrators", "Distributors", "Engineering Consultants", "OEM / ODM"]
+
+global:
+  eyebrow: "GLOBAL NETWORK"
+  title: "Connecting Vietnam With Global Technologies"
+  subtitle: "Building bridges between international technology innovators and Vietnamese industries."
+  columns:
+    - title: "Where Our Partners Are Based"
+      items: ["North America", "Europe", "Japan", "Korea", "Taiwan", "Singapore"]
+    - title: "Target Markets"
+      items: ["Vietnam", "Thailand", "Malaysia", "Indonesia", "Philippines"]
+
+partners:
+  eyebrow: "OUR NETWORK"
+  title: "Global Technology Partners"
+  subtitle: "Connecting customers with trusted industrial brands."
+  logos:
+    - "Semiconductor Partner"
+    - "Thermal Materials Partner"
+    - "Automation Partner"
+    - "Networking Partner"
+    - "Power & Energy Partner"
+    - "Industrial Brand Partner"
+
+brands:
+  eyebrow: "TECHNOLOGY NETWORK"
+  title: "Growing Together"
+  subtitle: "Our technology ecosystem continues to grow through trusted partnerships around the world."
+  logos:
+    - "Your Brand"
+    - "Future Partner"
+    - "Coming Soon"
+    - "Your Logo"
+    - "Global Brand"
+    - "Innovation Partner"

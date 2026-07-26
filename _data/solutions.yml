@@ -1,0 +1,162 @@
+seo_title: "Solutions | NexBridge Technology"
+seo_description: "Engineering consulting, thermal management, AI infrastructure, industrial automation, networking, semiconductor sourcing and custom engineering."
+
+page_header:
+  eyebrow: "Solutions"
+  title: "Engineering Solutions, Not Just Products"
+  subtitle: "From thermal management to semiconductor sourcing, every solution starts with your problem, not our catalog."
+
+why:
+  eyebrow: "WHY CHOOSE US"
+  title_line1: "More Than A Supplier."
+  title_line2: "We Become Your Engineering Partner."
+  subtitle: "We bridge technologies, suppliers and engineering expertise to deliver practical industrial solutions that create sustainable value."
+  cards:
+    - number: "01"
+      title: "Solution First"
+      description: "We recommend technologies based on customer requirements instead of pushing products."
+    - number: "02"
+      title: "Engineering Driven"
+      description: "Every recommendation is supported by technical understanding and application experience."
+    - number: "03"
+      title: "Trusted Network"
+      description: "We connect customers with world-class manufacturers and reliable technology partners."
+    - number: "04"
+      title: "Long-Term Partnership"
+      description: "We believe successful projects come from long-term collaboration instead of one-time sales."
+
+journey_process:
+  eyebrow: "YOUR JOURNEY"
+  title: "From Challenge To Solution"
+  steps:
+    - number: "01"
+      title: "Share Your Challenge"
+    - number: "02"
+      title: "Engineering Evaluation"
+    - number: "03"
+      title: "Technology Matching"
+    - number: "04"
+      title: "Partner Connection"
+    - number: "05"
+      title: "Project Success"
+
+solution_area:
+  eyebrow: "OUR EXPERTISE"
+  title: "Engineering Solutions"
+  subtitle: "Helping manufacturers solve complex engineering and industrial challenges."
+  items:
+    - title: "Thermal Management"
+      description: "Thermal Interface Materials, Liquid Cooling, Heat Pipes, Cold Plates, Cooling Modules."
+    - title: "Industrial Networking"
+      description: "Industrial Ethernet, Fiber, Wireless, Industrial Switches, Edge Computing."
+    - title: "Automation"
+      description: "PLC, Motion, Robotics, SCADA, IIoT Integration."
+    - title: "AI Infrastructure"
+      description: "GPU Servers, Rack Design, Liquid Cooling, Power Distribution."
+    - title: "Semiconductor"
+      description: "Precision Components, Clean Room, Automation, Materials."
+    - title: "Engineering Consulting"
+      description: "Technology Evaluation, Supplier Matching, Project Support."
+
+design_services:
+  eyebrow: "ENGINEERING SUPPORT"
+  title: "Beyond Sourcing — Real Design Support"
+  subtitle: "We don't just connect you to parts. Our team works alongside yours on the engineering itself."
+  cards:
+    - image: "assets/images/design-pcba.jpg"
+      title: "PCBA Design Support"
+      description: "From schematic capture to layout, we help you design PCBAs that are manufacturable, testable and ready to scale — not just functional on a bench."
+    - image: "assets/images/design-review.jpg"
+      title: "Design Review"
+      description: "A second set of expert eyes before you commit to tooling. We catch signal integrity, thermal and DFM issues while they're still cheap to fix."
+    - image: "assets/images/design-aspice.jpg"
+      title: "ASPICE Process Alignment"
+      description: "For automotive programs, we help align your development process with Automotive SPICE requirements from the start — not as an audit afterthought."
+
+capabilities:
+  eyebrow: "CAPABILITIES"
+  title: "Engineering Services"
+  items:
+    - title: "Technical Consulting"
+      description: "Technology evaluation, supplier selection and engineering consultation."
+    - title: "Solution Design"
+      description: "Customized engineering solutions for manufacturing industries."
+    - title: "Project Support"
+      description: "Coordination between customers, suppliers and engineering teams."
+    - title: "After-Sales Support"
+      description: "Long-term technical assistance and continuous improvement."
+
+process:
+  eyebrow: "HOW WE WORK"
+  title: "Our Engineering Workflow"
+  subtitle: "A structured approach ensuring every solution fits customer needs."
+  steps:
+    - number: "1"
+      title: "Discover"
+      description: "Understand customer goals, production challenges and business objectives."
+    - number: "2"
+      title: "Evaluate"
+      description: "Assess technologies, compare suppliers and identify optimal engineering solutions."
+    - number: "3"
+      title: "Implement"
+      description: "Coordinate suppliers, technical teams and project execution."
+    - number: "4"
+      title: "Support"
+      description: "Provide long-term technical support and continuous improvement."
+
+challenge:
+  eyebrow: "CHALLENGES"
+  title: "What Problems Do We Solve?"
+  cards:
+    - title: "Reducing Heat"
+      description: "Improve thermal performance for industrial electronics."
+    - title: "Increasing Productivity"
+      description: "Automation solutions that optimize manufacturing."
+    - title: "Improving Reliability"
+      description: "Industrial-grade technologies for mission critical applications."
+    - title: "Reducing Downtime"
+      description: "Engineering solutions that improve operational efficiency."
+
+technology:
+  eyebrow: "FEATURED TECHNOLOGIES"
+  title: "Technologies That Drive Modern Industry"
+  subtitle: "We collaborate with global technology providers to deliver innovative engineering solutions for the next generation of industrial manufacturing."
+  cards:
+    - icon: "🧠"
+      title: "Artificial Intelligence"
+      description: "AI computing platforms, GPU infrastructure, industrial edge AI and intelligent analytics."
+    - icon: "❄️"
+      title: "Liquid Cooling"
+      description: "High-performance cooling systems for AI servers, HPC clusters and data centers."
+    - icon: "⚙️"
+      title: "Automation"
+      description: "PLC, industrial networking, robotics and smart manufacturing."
+    - icon: "🔋"
+      title: "Power & Energy"
+      description: "Industrial power, battery systems, renewable energy and energy management."
+    - icon: "🛰️"
+      title: "Industrial Connectivity"
+      description: "Ethernet, wireless, IIoT gateways, industrial communication."
+    - icon: "💎"
+      title: "Semiconductor"
+      description: "Precision manufacturing, process equipment and clean-room technologies."
+
+engineers:
+  eyebrow: "FOR ENGINEERS"
+  title: "Built For Decision Makers"
+  subtitle: "Engineers don't need more brochures. They need reliable information, clear comparisons and trusted recommendations."
+  cards:
+    - title: "Technical Understanding"
+      description: "Every discussion starts with engineering, not product codes."
+    - title: "Vendor Neutral"
+      description: "The right solution matters more than a specific manufacturer."
+    - title: "Application Driven"
+      description: "Solutions are selected based on real operating conditions."
+    - title: "Future Ready"
+      description: "Designing today's projects with tomorrow's technologies in mind."
+
+cta:
+  title: "Backed By A Global Technology Network"
+  text: "We bridge you to semiconductor and materials leaders like TI, NXP and T-Global."
+  button_text: "Explore Our Partner Network"
+  button_link: "partners.html"

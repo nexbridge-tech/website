@@ -2815,7 +2815,7 @@ VALUE GRID
 
     position:absolute;
 
-    left:70px;
+    left:156px;
 
     top:6px;
 
@@ -2876,7 +2876,7 @@ VALUE GRID
 
     position:absolute;
 
-    right:-38px;
+    right:-22px;
 
     top:4px;
 
@@ -3405,6 +3405,66 @@ PARTNER LOGOS
     gap:12px;
 
     margin-top:20px;
+
+}
+
+/* =====================================================
+   TESTIMONIAL CARDS
+===================================================== */
+
+.testimonial-slider{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:26px;
+
+    margin-top:20px;
+
+}
+
+.testimonial-card{
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:32px;
+
+    text-align:left;
+
+}
+
+.testimonial-quote{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    color:var(--dark);
+
+    margin-bottom:20px;
+
+}
+
+.testimonial-footer{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+@media (max-width:900px){
+
+    .testimonial-slider{
+        grid-template-columns:1fr;
+    }
 
 }
 

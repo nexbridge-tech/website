@@ -1,0 +1,72 @@
+---
+layout: base.njk
+permalink: "industries.html"
+title: "{{ industries.seo_title }}"
+description: "{{ industries.seo_description }}"
+---
+<section class="page-header">
+<div class="hero-glow"></div>
+<div class="container">
+<span class="hero-eyebrow">{{ industries.page_header.eyebrow }}</span>
+<h1>{{ industries.page_header.title }}</h1>
+<p>{{ industries.page_header.subtitle }}</p>
+</div>
+</section>
+
+<section class="industries section fade-up">
+<div class="container">
+<div class="section-title">
+<span>{{ industries.industries.eyebrow }}</span>
+<h2>{{ industries.industries.title }}</h2>
+<p>{{ industries.industries.subtitle }}</p>
+</div>
+<div class="industry-grid">
+{% for card in industries.industries.cards %}
+<article class="industry-card">
+<img class="card-photo" loading="lazy" src="{{ card.image }}" alt="{{ card.title }}">
+<div class="industry-icon">{{ card.icon }}</div>
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</article>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="industry-overview section fade-up">
+<div class="container">
+<div class="section-title">
+<span>{{ industries.industry_overview.eyebrow }}</span>
+<h2>{{ industries.industry_overview.title }}</h2>
+</div>
+<div class="industry-list">
+{% for item in industries.industry_overview.items %}
+<div>
+<h3>{{ item.title }}</h3>
+<p>{{ item.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="case-study section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ industries.case_study.eyebrow }}</span>
+<h2>{{ industries.case_study.title }}</h2>
+<p>{{ industries.case_study.subtitle }}</p>
+</div>
+<div class="case-grid">
+{% for card in industries.case_study.cards %}
+<article class="case-card">
+<img class="card-photo" loading="lazy" src="{{ card.image }}" alt="{{ card.title }}">
+<div class="case-tag">{{ card.tag }}</div>
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+<a href="{{ card.link }}">{{ card.link_text }}</a>
+</article>
+{% endfor %}
+</div>
+</div>
+</section>

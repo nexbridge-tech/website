@@ -1,0 +1,187 @@
+---
+layout: base.njk
+permalink: "solutions.html"
+title: "{{ solutions.seo_title }}"
+description: "{{ solutions.seo_description }}"
+---
+<section class="page-header">
+<div class="hero-glow"></div>
+<div class="container">
+<span class="hero-eyebrow">{{ solutions.page_header.eyebrow }}</span>
+<h1>{{ solutions.page_header.title }}</h1>
+<p>{{ solutions.page_header.subtitle }}</p>
+</div>
+</section>
+
+<section id="why" class="why section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ solutions.why.eyebrow }}</span>
+<h2>{{ solutions.why.title_line1 }}<br>{{ solutions.why.title_line2 }}</h2>
+<p>{{ solutions.why.subtitle }}</p>
+</div>
+<div class="why-grid">
+{% for card in solutions.why.cards %}
+<div class="why-card">
+<div class="why-number">{{ card.number }}</div>
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="journey-process section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ solutions.journey_process.eyebrow }}</span>
+<h2>{{ solutions.journey_process.title }}</h2>
+</div>
+<div class="journey-line">
+{% for step in solutions.journey_process.steps %}
+<div class="journey-step">
+<h3>{{ step.number }}</h3>
+<h4>{{ step.title }}</h4>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section id="solution-area" class="solution-area section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ solutions.solution_area.eyebrow }}</span>
+<h2>{{ solutions.solution_area.title }}</h2>
+<p>{{ solutions.solution_area.subtitle }}</p>
+</div>
+<div class="solution-grid">
+{% for item in solutions.solution_area.items %}
+<div class="solution-item">
+<h3>{{ item.title }}</h3>
+<p>{{ item.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section id="design-services" class="section">
+<div class="container">
+<div class="section-title center">
+<span>{{ solutions.design_services.eyebrow }}</span>
+<h2>{{ solutions.design_services.title }}</h2>
+<p>{{ solutions.design_services.subtitle }}</p>
+</div>
+<div class="blog-grid">
+{% for card in solutions.design_services.cards %}
+<div class="card">
+<img class="card-photo" loading="lazy" src="{{ card.image }}" alt="{{ card.title }}">
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section id="capabilities" class="capabilities section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ solutions.capabilities.eyebrow }}</span>
+<h2>{{ solutions.capabilities.title }}</h2>
+</div>
+<div class="capability-grid">
+{% for item in solutions.capabilities.items %}
+<div class="capability">
+<h3>{{ item.title }}</h3>
+<p>{{ item.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="process section fade-up">
+<div class="container">
+<div class="section-title">
+<span>{{ solutions.process.eyebrow }}</span>
+<h2>{{ solutions.process.title }}</h2>
+<p>{{ solutions.process.subtitle }}</p>
+</div>
+<div class="timeline">
+{% for step in solutions.process.steps %}
+<div class="step">
+<div class="circle">{{ step.number }}</div>
+<div>
+<h3>{{ step.title }}</h3>
+<p>{{ step.description }}</p>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="challenge section fade-up">
+<div class="container">
+<div class="section-title">
+<span>{{ solutions.challenge.eyebrow }}</span>
+<h2>{{ solutions.challenge.title }}</h2>
+</div>
+<div class="challenge-grid">
+{% for card in solutions.challenge.cards %}
+<div class="challenge-card">
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="technology section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ solutions.technology.eyebrow }}</span>
+<h2>{{ solutions.technology.title }}</h2>
+<p>{{ solutions.technology.subtitle }}</p>
+</div>
+<div class="tech-grid">
+{% for card in solutions.technology.cards %}
+<article class="tech-card">
+<div class="tech-icon">{{ card.icon }}</div>
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</article>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="engineers section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ solutions.engineers.eyebrow }}</span>
+<h2>{{ solutions.engineers.title }}</h2>
+<p>{{ solutions.engineers.subtitle }}</p>
+</div>
+<div class="engineer-grid">
+{% for card in solutions.engineers.cards %}
+<div class="engineer-card">
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container" style="text-align:center">
+<h2>{{ solutions.cta.title }}</h2>
+<p>{{ solutions.cta.text }}</p>
+<a href="{{ solutions.cta.button_link }}" class="btn btn-light">{{ solutions.cta.button_text }}</a>
+</div>
+</section>

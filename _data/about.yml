@@ -1,0 +1,98 @@
+seo_title: "About | NexBridge Technology"
+seo_description: "The story, philosophy and values behind NexBridge Technology."
+
+page_header:
+  eyebrow: "About"
+  title: "Built On Real Engineering Experience"
+  subtitle: "Why NexBridge exists, and the philosophy behind how we work with every customer."
+
+overview:
+  small_title: "DESCRIPTION"
+  title: "Who We Are"
+  paragraphs:
+    - "NexBridge Technology connects Vietnamese manufacturers, OEMs and system integrators with the right global technology partners — from semiconductor suppliers like TI and NXP to materials specialists like T-Global — to solve real engineering problems."
+    - "Rather than pushing products, we start with the problem: understanding the application, the operating conditions and the constraints, then matching it to a component, material or partner that actually fits."
+    - "Drawing on hands-on experience from the front lines of Vietnam's electric vehicle industry, we bring practical, application-tested knowledge to every recommendation we make."
+  mission_cards:
+    - icon: target
+      title: "Our Mission"
+      description: "To empower Vietnamese industries by connecting them with the right global technologies to solve real engineering problems."
+    - icon: eye
+      title: "Our Vision"
+      description: "To be the most trusted engineering bridge between global technology innovators and Vietnamese industry."
+    - icon: compass
+      title: "Our Approach"
+      description: "Understand – Connect – Integrate – Deliver – Support."
+    - icon: commitment
+      title: "Our Commitment"
+      description: "Integrity, partnership and long-term value creation for our customers and communities."
+
+stats:
+  eyebrow: "OUR IMPACT"
+  title: "Delivering Engineering Excellence"
+  subtitle: "We help industrial manufacturers, system integrators and technology partners accelerate projects through trusted engineering solutions."
+  items:
+    - target: 20
+      label: "Global Technology Partners"
+    - target: 150
+      label: "Industrial Projects Supported"
+    - target: 8
+      label: "Strategic Industries"
+    - target: 100
+      label: "Customer-Focused Solutions"
+
+timeline_company:
+  eyebrow: "OUR JOURNEY"
+  title: "Growing Together With Industry"
+  subtitle: "Our vision is to become Vietnam's trusted engineering bridge connecting global technologies with local industries."
+  items:
+    - year: "current"
+      title: "NexBridge Founded"
+      description: "Established with the mission of connecting global engineering solutions to Vietnam."
+    - year: "2027"
+      title: "Regional Partnerships"
+      description: "Expand cooperation with strategic technology partners across Asia-Pacific."
+    - year: "2030"
+      title: "Engineering Platform"
+      description: "Build a digital engineering marketplace connecting manufacturers and solution providers."
+    - year: "2035"
+      title: "Leading Engineering Ecosystem"
+      description: "Become one of Southeast Asia's most trusted industrial technology bridges."
+
+philosophy:
+  eyebrow: "OUR PHILOSOPHY"
+  title: "We Build Value Before We Build Business"
+  subtitle: "At NexBridge, success is not measured by the number of products sold, but by the long-term value we create for our customers, partners and the industries we serve."
+  cards:
+    - title: "Think Long Term"
+      description: "Sustainable partnerships always outperform short-term transactions."
+    - title: "Engineering Before Sales"
+      description: "We seek to understand the problem before recommending any solution."
+    - title: "Trust Creates Opportunity"
+      description: "Trust is earned through honesty, expertise and consistent delivery."
+
+bridge_way:
+  eyebrow: "THE NEXBRIDGE WAY"
+  title: "How We Work"
+  steps:
+    - title: "Listen"
+      description: "Understand the customer's business, not just the technical specification."
+    - title: "Learn"
+      description: "Research technologies, evaluate suppliers and compare approaches."
+    - title: "Connect"
+      description: "Bring together the right people, the right technologies and the right partners."
+    - title: "Create Value"
+      description: "Deliver sustainable outcomes that continue long after the project is completed."
+
+values:
+  eyebrow: "OUR VALUES"
+  title: "What We Believe"
+  cards:
+    - title: "Integrity"
+      description: "Always keep promises and act with honesty, even when it is difficult."
+    - title: "Expertise"
+      description: "Knowledge comes before products. Every recommendation is based on engineering."
+    - title: "Partnership"
+      description: "Long-term relationships are more valuable than short-term transactions."
+    - title: "Innovation"
+      description: "Continuously explore emerging technologies to create future-ready solutions."

@@ -1,0 +1,97 @@
+---
+layout: base.njk
+permalink: "contact.html"
+title: "{{ contact.seo_title }}"
+description: "{{ contact.seo_description }}"
+---
+<section class="hero-banner" style="padding-bottom:70px">
+<div class="hero-glow"></div>
+<div class="container">
+<div class="hero-banner-inner" style="max-width:640px">
+<span class="hero-eyebrow">{{ contact.hero.eyebrow }}</span>
+<h1>{{ contact.hero.title }}</h1>
+<p class="lead">{{ contact.hero.lead }}</p>
+</div>
+</div>
+</section>
+
+<section class="testimonial section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ contact.testimonial.eyebrow }}</span>
+<h2>{{ contact.testimonial.title }}</h2>
+</div>
+<div class="testimonial-slider">
+{% for card in contact.testimonial.cards %}
+<div class="testimonial-card">
+<div class="testimonial-quote">&ldquo;{{ card.quote }}&rdquo;</div>
+<div class="testimonial-footer">
+<div class="avatar-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></div>
+<div class="author">— {{ card.author }}</div>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="quote section">
+<div class="container">
+<blockquote>&ldquo;{{ contact.quote.text }}&rdquo;</blockquote>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="overview-grid">
+
+<div>
+<div class="section-title">
+<span>{{ contact.form.eyebrow }}</span>
+<h2>{{ contact.form.title }}</h2>
+</div>
+
+<form name="contact" method="POST" data-netlify="true" class="contact-form">
+<input type="hidden" name="form-name" value="contact">
+
+<div class="form-row">
+<label><input type="radio" name="inquiry_type" value="New Inquiry" checked> New Inquiry</label>
+<label><input type="radio" name="inquiry_type" value="Partnership"> Partnership</label>
+<label><input type="radio" name="inquiry_type" value="Technical Support"> Technical Support</label>
+</div>
+
+<div class="form-grid">
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Work Email" required>
+<input type="text" name="company" placeholder="Company">
+<input type="text" name="phone" placeholder="Phone (optional)">
+</div>
+
+<textarea name="message" rows="5" placeholder="Tell us about your project or question" required></textarea>
+
+<button type="submit" class="btn btn-primary">Send Message</button>
+
+</form>
+</div>
+
+<div class="mission-cards" style="grid-template-columns:1fr">
+
+<div class="mission-card">
+<div class="mission-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7-7 18-2-8-9-3z"/></svg></div>
+<div><h3>{{ contact.info.office_label }}</h3><p>{{ contact.info.office_text | safe }}</p></div>
+</div>
+
+<div class="mission-card">
+<div class="mission-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+<div><h3>Email</h3><p><a href="mailto:{{ contact.info.email }}">{{ contact.info.email }}</a></p></div>
+</div>
+
+<div class="mission-card">
+<div class="mission-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="8" y1="10" x2="8" y2="16"/><circle cx="8" cy="7" r=".6" fill="currentColor" stroke="none"/><line x1="12" y1="13" x2="12" y2="16"/><line x1="16" y1="11" x2="16" y2="16"/></svg></div>
+<div><h3>LinkedIn</h3><p><a href="{{ contact.info.linkedin_url }}" target="_blank" rel="noopener">{{ contact.info.linkedin_label }}</a></p></div>
+</div>
+
+</div>
+</div>
+</div>
+</section>

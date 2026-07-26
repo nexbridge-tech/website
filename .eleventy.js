@@ -1,18 +1,14 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
+
+  // CRITICAL: Eleventy doesn't read .yml files as data by default -
+  // this teaches it to. Without this, every _data/*.yml file is silently ignored.
   eleventyConfig.addDataExtension("yml", (contents) => require("js-yaml").load(contents));
 
-  // Static pages that stay hand-coded HTML - just copy them through untouched
-  eleventyConfig.addPassthroughCopy("solutions.html");
-  eleventyConfig.addPassthroughCopy("industries.html");
-  eleventyConfig.addPassthroughCopy("partners.html");
-  eleventyConfig.addPassthroughCopy("about.html");
-  eleventyConfig.addPassthroughCopy("contact.html");
+  // Site assets - these stay as plain files, not templates
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("sitemap.xml");
-
-  // Site assets
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("script.js");
   eleventyConfig.addPassthroughCopy("assets");

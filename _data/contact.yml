@@ -1,0 +1,32 @@
+seo_title: "Contact | NexBridge Technology"
+seo_description: "Get in touch with NexBridge for new inquiries, partnerships or technical support."
+
+hero:
+  eyebrow: "Get In Touch"
+  title: "Let's Solve Your Next Engineering Problem"
+  lead: "Tell us what you're working on and we'll connect you with the right solution, not just a product."
+
+testimonial:
+  eyebrow: "CLIENT VOICES"
+  title: "Building Long-Term Partnerships"
+  cards:
+    - quote: "NexBridge focuses on solving engineering problems, not simply selling products."
+      author: "Future Manufacturing Partner"
+    - quote: "They understood our thermal issue faster than vendors we'd worked with for years."
+      author: "Future Electronics Partner"
+    - quote: "It felt like having an engineer on our side of the table, not just another supplier."
+      author: "Future Industrial Partner"
+
+quote:
+  text: "We don't measure success by the products we deliver. We measure success by the value our customers continue to create because of them."
+
+form:
+  eyebrow: "CONTACT FORM"
+  title: "I Am A..."
+
+info:
+  office_label: "Office"
+  office_text: "Hanoi, Vietnam<br>(full address coming soon)"
+  email: "sales@nexbridge.vn"
+  linkedin_label: "linkedin.com/company/nexbridge-technologies-solution"
+  linkedin_url: "https://www.linkedin.com/company/nexbridge-technologies-solution"
