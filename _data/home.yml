@@ -44,7 +44,7 @@ design_services:
       description: From schematic capture to layout, we help you design PCBAs that are
         manufacturable, testable and ready to scale — not just functional on a
         bench.
-    - image: assets/images/design-review.jpg
+    - image: /assets/images/3d35d6e6-f0ab-4e8b-b48d-f64b3ea8d7fd.png
       title: Design Review
       description: A second set of expert eyes before you commit to tooling. We catch
         signal integrity, thermal and DFM issues while they're still cheap to
