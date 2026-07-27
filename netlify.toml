@@ -4,3 +4,35 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Explicit rewrites so clean URLs (without .html) always work reliably,
+# regardless of the "Pretty URLs" dashboard setting's behavior.
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions"
+  to = "/solutions.html"
+  status = 200
+
+[[redirects]]
+  from = "/industries"
+  to = "/industries.html"
+  status = 200
+
+[[redirects]]
+  from = "/partners"
+  to = "/partners.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/knowledge"
+  to = "/knowledge.html"
+  status = 200
