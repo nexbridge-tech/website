@@ -51,8 +51,11 @@ description: "{{ contact.seo_description }}"
 <h2>{{ contact.form.title }}</h2>
 </div>
 
-<form name="contact" method="POST" data-netlify="true" class="contact-form">
-<input type="hidden" name="form-name" value="contact">
+<form method="POST" action="https://api.web3forms.com/submit" class="contact-form">
+<input type="hidden" name="access_key" value="418a8e02-c4c3-44db-a81a-f5c24ad1f408">
+<input type="hidden" name="subject" value="New Contact Form Submission - NexBridge Website">
+<input type="hidden" name="redirect" value="https://nexbridge.vn/contact-success.html">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
 <div class="form-row">
 <label><input type="radio" name="inquiry_type" value="New Inquiry" checked> New Inquiry</label>
