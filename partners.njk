@@ -1,8 +1,9 @@
 ---
 layout: base.njk
 permalink: "partners.html"
-title: "{{ partners.seo_title }}"
-description: "{{ partners.seo_description }}"
+eleventyComputed:
+  title: "{{ partners.seo_title }}"
+  description: "{{ partners.seo_description }}"
 ---
 <section class="page-header">
 <div class="hero-glow"></div>

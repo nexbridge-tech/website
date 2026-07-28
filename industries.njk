@@ -1,8 +1,9 @@
 ---
 layout: base.njk
 permalink: "industries.html"
-title: "{{ industries.seo_title }}"
-description: "{{ industries.seo_description }}"
+eleventyComputed:
+  title: "{{ industries.seo_title }}"
+  description: "{{ industries.seo_description }}"
 ---
 <section class="page-header">
 <div class="hero-glow"></div>
