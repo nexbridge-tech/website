@@ -65,9 +65,15 @@ eleventyComputed:
 <h2>{{ partners.partners.title }}</h2>
 <p>{{ partners.partners.subtitle }}</p>
 </div>
-<div class="partner-grid">
-{% for logo in partners.partners.logos %}
-<div class="partner-logo">{{ logo }}</div>
+<div class="blog-grid">
+{% for item in partners.partners.items %}
+<div class="card">
+<img class="card-photo" loading="lazy" src="{{ item.image }}" alt="{{ item.name }}">
+<h3>{{ item.name }}</h3>
+<p><strong>{{ item.category }}</strong></p>
+<p>{{ item.description }}</p>
+<a href="{{ item.link }}" target="_blank" rel="noopener" class="btn btn-light">Visit {{ item.name }} →</a>
+</div>
 {% endfor %}
 </div>
 </div>
@@ -81,8 +87,11 @@ eleventyComputed:
 <p>{{ partners.brands.subtitle }}</p>
 </div>
 <div class="brand-wall">
-{% for logo in partners.brands.logos %}
-<div class="brand-box">{{ logo }}</div>
+{% for item in partners.brands.items %}
+<a href="{{ item.link }}" target="_blank" rel="noopener" class="brand-box">
+<img src="{{ item.image }}" alt="{{ item.name }}" style="max-height:32px;width:auto;margin-bottom:8px;" loading="lazy" onerror="this.style.display='none'">
+<div>{{ item.name }}</div>
+</a>
 {% endfor %}
 </div>
 </div>

@@ -60,7 +60,7 @@ explore:
   cards:
     - icon: layers
       title: Solutions
-      description: Engineering consulting, thermal management, AI infrastructure,
+      description: Energy storage systems, thermal management, AI infrastructure,
         automation, networking and semiconductor sourcing.
       link_text: View Solutions →
       link: solutions.html
@@ -113,6 +113,9 @@ challenge_finder:
     - emoji: ⚡
       label: Save Energy
       link: solutions.html
+    - emoji: 🔋
+      label: Energy Storage
+      link: solutions.html#energy-storage
     - emoji: 🏭
       label: Factory Automation
       link: solutions.html

@@ -2400,6 +2400,44 @@ INDUSTRY CARD
 
 }
 
+.solution-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.solution-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    background:var(--primary);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:18px;
+
+}
+
+.solution-icon svg{
+
+    width:24px;
+
+    height:24px;
+
+    stroke:white;
+
+}
+
 .global-grid,
 .program-grid{
 
