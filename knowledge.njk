@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 permalink: "knowledge.html"
-title: "Knowledge | NexBridge Technology"
+title: "Knowledge | NexBridge Solutions"
 description: "Engineering insights, field notes and technical guides from NexBridge."
 ---
 
@@ -49,6 +49,8 @@ Application Notes
 
 </h3>
 
+<p>Real component and system behavior under real operating conditions — not datasheet summaries.</p>
+
 </div>
 
 <div class="knowledge-card">
@@ -58,6 +60,8 @@ Application Notes
 Technical Guides
 
 </h3>
+
+<p>Step-by-step engineering references for design, integration, calibration and commissioning work.</p>
 
 </div>
 
@@ -69,6 +73,8 @@ Industry Reports
 
 </h3>
 
+<p>Trends in energy storage, EV powertrain electronics and industrial manufacturing across Vietnam and the region.</p>
+
 </div>
 
 <div class="knowledge-card">
@@ -79,102 +85,9 @@ Product Comparison
 
 </h3>
 
-</div>
+<p>Side-by-side evaluation of components and suppliers, matched against real application requirements.</p>
 
 </div>
-
-</div>
-
-</section><section class="insights section fade-up">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>INSIGHTS</span>
-
-<h2>
-
-Industry Trends
-
-</h2>
-
-<p>
-
-Stay updated with technologies shaping the future of manufacturing.
-
-</p>
-
-</div>
-
-<div class="insight-grid">
-
-<article class="insight-card">
-
-<div class="date">
-
-JUL 2026
-
-</div>
-
-<h3>
-
-AI Infrastructure Growth
-
-</h3>
-
-<p>
-
-How liquid cooling is transforming high-performance computing.
-
-</p>
-
-</article>
-
-<article class="insight-card">
-
-<div class="date">
-
-JUN 2026
-
-</div>
-
-<h3>
-
-Factory Digitalization
-
-</h3>
-
-<p>
-
-Connecting production lines through Industrial IoT.
-
-</p>
-
-</article>
-
-<article class="insight-card">
-
-<div class="date">
-
-MAY 2026
-
-</div>
-
-<h3>
-
-Thermal Engineering
-
-</h3>
-
-<p>
-
-Choosing the right thermal interface material
-for industrial electronics.
-
-</p>
-
-</article>
 
 </div>
 
@@ -200,37 +113,37 @@ Engineering Knowledge Library
 
 <div class="resource-card">
 
-Technical Articles
+<strong>Technical Articles</strong><br>In-depth engineering write-ups from real projects.
 
 </div>
 
 <div class="resource-card">
 
-White Papers
+<strong>White Papers</strong><br>Coming soon — deeper technical references for specific applications.
 
 </div>
 
 <div class="resource-card">
 
-Case Studies
+<strong>Case Studies</strong><br>Representative project examples, published as they're ready to share.
 
 </div>
 
 <div class="resource-card">
 
-Engineering Tools
+<strong>Engineering Tools</strong><br>Coming soon — calculators and reference tables for common design tasks.
 
 </div>
 
 <div class="resource-card">
 
-Download Center
+<strong>Download Center</strong><br>Coming soon — datasheets and reference documents.
 
 </div>
 
 <div class="resource-card">
 
-FAQ
+<strong>FAQ</strong><br><a href="contact.html">Ask us directly</a> — most questions are project-specific anyway.
 
 </div>
 
@@ -246,15 +159,53 @@ FAQ
 <h2>Engineering Insights</h2>
 </div>
 
+<div class="knowledge-toolbar">
+
+<div class="knowledge-search">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input type="text" id="knowledgeSearchInput" placeholder="Search articles by title, keyword or topic…" aria-label="Search Knowledge articles">
+</div>
+
+<div class="topic-chips" id="topicChips">
+<button type="button" class="topic-chip active" data-topic="all">All Topics</button>
+<button type="button" class="topic-chip" data-topic="Automotive &amp; EV Power Electronics">Automotive &amp; EV Power Electronics</button>
+<button type="button" class="topic-chip" data-topic="Engineering Consulting &amp; Process">Engineering Consulting &amp; Process</button>
+<button type="button" class="topic-chip" data-topic="Energy Storage Systems">Energy Storage Systems</button>
+<button type="button" class="topic-chip" data-topic="Semiconductor &amp; Manufacturing">Semiconductor &amp; Manufacturing</button>
+<button type="button" class="topic-chip" data-topic="Industrial Networking &amp; Automation">Industrial Networking &amp; Automation</button>
+<button type="button" class="topic-chip" data-topic="Career &amp; Culture">Career &amp; Culture</button>
+<button type="button" class="topic-chip" data-topic="Thermal Management">Thermal Management</button>
+<button type="button" class="topic-chip" data-topic="AI Infrastructure">AI Infrastructure</button>
+</div>
+
+</div>
+
+<p class="knowledge-empty" id="knowledgeEmptyState" hidden>No articles match your search. Try a different keyword or topic.</p>
+
+<div class="knowledge-groups" id="blogGrid">
+{% for group in collections.knowledgeByTopic %}
+<div class="topic-group" data-topic-group="{{ group.topic }}">
+
+<div class="topic-group-header">
+<h3>{{ group.topic }}</h3>
+<span class="topic-group-count">{{ group.articles.length }} article{% if group.articles.length != 1 %}s{% endif %}</span>
+</div>
+
 <div class="blog-grid">
-{% for article in collections.knowledgeArticles %}
-<a class="card" href="{{ article.url }}" style="text-decoration:none;color:inherit;display:block">
+{% for article in group.articles %}
+<a class="card"
+   data-search="{{ article.data.title | lower }} {{ article.data.excerpt | lower }} {{ article.data.tags | join(' ') | lower }}"
+   href="{{ article.url }}" style="text-decoration:none;color:inherit;display:block">
 <img class="card-photo" loading="lazy" src="{{ article.data.image }}" alt="{{ article.data.title }}">
 <span class="blog-tag">{{ article.data.tags[0] }}</span>
 <h3>{{ article.data.title }}</h3>
 <p>{{ article.data.excerpt }}</p>
 <div class="blog-meta">{{ article.data.date | readableDate }}</div>
 </a>
+{% endfor %}
+</div>
+
+</div>
 {% endfor %}
 </div>
 

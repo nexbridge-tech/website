@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0A2342"/>
+<stop offset="45%" stop-color="#0D2C52"/>
+<stop offset="100%" stop-color="#08192E"/>
+</linearGradient>
+<radialGradient id="glow" cx="82%" cy="8%" r="60%">
+<stop offset="0%" stop-color="#00AEEF" stop-opacity="0.30"/>
+<stop offset="70%" stop-color="#00AEEF" stop-opacity="0"/>
+</radialGradient>
+<pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+<circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.06"/>
+</pattern>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#dots)"/>
+<rect width="1600" height="900" fill="url(#glow)"/>
+<g transform="translate(800,388) scale(3.1)">
+<path d="M-60,40 h120 v-10 h-120 z" fill="none" stroke="#00AEEF" stroke-width="3"/><path d="M-50,30 v-30 l22,16 v-16 l22,16 v-16 l16,14 v16" fill="none" stroke="#00AEEF" stroke-width="3" stroke-linejoin="round"/><circle cx="-38" cy="-38" r="9" fill="none" stroke="#00AEEF" stroke-width="3"/><path d="M-38,-51 v6 M-38,-19 v6 M-51,-38 h6 M-25,-38 h6 M-46.2,-46.2 l4.2,4.2 M-25.8,-46.2 l-4.2,4.2 M-46.2,-29.8 l4.2,-4.2 M-25.8,-29.8 l-4.2,-4.2" stroke="#00AEEF" stroke-width="2.5" stroke-linecap="round"/>
+</g>
+<text x="800" y="640" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="6" fill="#00AEEF" font-weight="700">MANUFACTURING</text>
+<text x="800" y="690" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="2" fill="#ffffff" fill-opacity="0.45">NexBridge Solutions</text>
+</svg>

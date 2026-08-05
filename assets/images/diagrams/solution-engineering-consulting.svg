@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#0A2342"/>
+</marker>
+<marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#00AEEF"/>
+</marker>
+<pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+<path d="M28,0 H0 V28" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+</pattern>
+</defs>
+<rect width="1200" height="640" fill="#F8FAFC"/>
+<rect width="1200" height="640" fill="url(#grid)"/>
+<rect x="0.5" y="0.5" width="1199" height="639" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+<line x1="600" y1="326" x2="600" y2="151" stroke="#E2E8F0" stroke-width="2"/><line x1="600" y1="326" x2="766.4348903516518" y2="271.9220259843842" stroke="#E2E8F0" stroke-width="2"/><line x1="600" y1="326" x2="702.8624191511828" y2="467.57797401561584" stroke="#E2E8F0" stroke-width="2"/><line x1="600" y1="326" x2="497.1375808488172" y2="467.57797401561584" stroke="#E2E8F0" stroke-width="2"/><line x1="600" y1="326" x2="433.5651096483481" y2="271.9220259843842" stroke="#E2E8F0" stroke-width="2"/><circle cx="600" cy="151" r="9" fill="#00AEEF"/><text x="600" y="80" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Technology</text>
+<text x="600" y="98" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Evaluation</text><circle cx="766.4348903516518" cy="271.9220259843842" r="9" fill="#00AEEF"/><text x="825.4003943619514" y="243.76297233313747" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Supplier</text>
+<text x="825.4003943619514" y="261.76297233313744" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Matching</text><circle cx="702.8624191511828" cy="467.57797401561584" r="9" fill="#00AEEF"/><text x="739.3051047933161" y="508.73702766686256" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Compliance</text>
+<text x="739.3051047933161" y="526.7370276668626" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Review</text><circle cx="497.1375808488172" cy="467.57797401561584" r="9" fill="#00AEEF"/><text x="460.6948952066839" y="508.73702766686256" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Process</text>
+<text x="460.6948952066839" y="526.7370276668626" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Alignment</text><circle cx="433.5651096483481" cy="271.9220259843842" r="9" fill="#00AEEF"/><text x="374.5996056380486" y="243.7629723331375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Project</text>
+<text x="374.5996056380486" y="261.7629723331375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#111827">Support</text><circle cx="600" cy="326" r="86" fill="#0A2342"/><text x="600" y="317" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Engineering</text>
+<text x="600" y="335" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Consulting</text>
+<text x="600" y="614" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#6B7280">MATCHED TO THE REAL REQUIREMENT, NOT A GENERIC CHECKLIST</text>
+</svg>

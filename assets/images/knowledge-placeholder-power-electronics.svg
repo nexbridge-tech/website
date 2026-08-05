@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0A2342"/>
+<stop offset="45%" stop-color="#0D2C52"/>
+<stop offset="100%" stop-color="#08192E"/>
+</linearGradient>
+<radialGradient id="glow" cx="82%" cy="8%" r="60%">
+<stop offset="0%" stop-color="#00AEEF" stop-opacity="0.30"/>
+<stop offset="70%" stop-color="#00AEEF" stop-opacity="0"/>
+</radialGradient>
+<pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+<circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.06"/>
+</pattern>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#dots)"/>
+<rect width="1600" height="900" fill="url(#glow)"/>
+<g transform="translate(800,388) scale(3.1)">
+<path d="M-70,-46 h140 a10,10 0 0 1 10,10 v72 a10,10 0 0 1 -10,10 h-140 a10,10 0 0 1 -10,-10 v-72 a10,10 0 0 1 10,-10 z" fill="none" stroke="#00AEEF" stroke-width="3"/><path d="M-40,-46 v-18 M0,-46 v-18 M40,-46 v-18 M-40,46 v18 M0,46 v18 M40,46 v18 M70,-20 h18 M70,20 h18 M-70,-20 h-18 M-70,20 h-18" stroke="#00AEEF" stroke-width="3" stroke-linecap="round"/><circle cx="-30" cy="-10" r="5" fill="#00AEEF"/><circle cx="10" cy="-10" r="5" fill="#00AEEF"/><circle cx="30" cy="18" r="5" fill="#00AEEF"/><path d="M-30,-10 h20 M10,-10 v28 h20" fill="none" stroke="#00AEEF" stroke-width="3"/>
+</g>
+<text x="800" y="640" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="6" fill="#00AEEF" font-weight="700">POWER ELECTRONICS</text>
+<text x="800" y="690" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="2" fill="#ffffff" fill-opacity="0.45">NexBridge Solutions</text>
+</svg>

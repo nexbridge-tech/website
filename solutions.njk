@@ -32,11 +32,16 @@ eleventyComputed:
 </div>
 <div class="why-grid">
 {% for card in solutions.why.cards %}
-<div class="why-card">
+<details class="why-card">
+<summary>
 <div class="why-number">{{ card.number }}</div>
 <h3>{{ card.title }}</h3>
 <p>{{ card.description }}</p>
+</summary>
+<div class="card-detail">
+<p>{{ card.detail }}</p>
 </div>
+</details>
 {% endfor %}
 </div>
 </div>
@@ -50,10 +55,16 @@ eleventyComputed:
 </div>
 <div class="journey-line">
 {% for step in solutions.journey_process.steps %}
-<div class="journey-step">
+<details class="journey-step">
+<summary>
 <h3>{{ step.number }}</h3>
 <h4>{{ step.title }}</h4>
+<p>{{ step.description }}</p>
+</summary>
+<div class="card-detail">
+<p>{{ step.detail }}</p>
 </div>
+</details>
 {% endfor %}
 </div>
 </div>
@@ -68,11 +79,19 @@ eleventyComputed:
 </div>
 <div class="solution-grid">
 {% for item in solutions.solution_area.items %}
-<div class="solution-item">
+<details class="solution-item">
+<summary>
 <div class="solution-icon">{{ solIcons[item.icon] | safe }}</div>
 <h3>{{ item.title }}</h3>
 <p>{{ item.description }}</p>
+</summary>
+<div class="card-detail">
+<p>{{ item.detail }}</p>
+{% if item.slug %}
+<a href="/solutions/{{ item.slug }}.html" class="card-detail-link">Read the full breakdown &rarr;</a>
+{% endif %}
 </div>
+</details>
 {% endfor %}
 </div>
 </div>
@@ -166,6 +185,27 @@ eleventyComputed:
 <h3>{{ card.title }}</h3>
 <p>{{ card.description }}</p>
 </div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="case-study section fade-up">
+<div class="container">
+<div class="section-title center">
+<span>{{ solutions.case_study.eyebrow }}</span>
+<h2>{{ solutions.case_study.title }}</h2>
+<p>{{ solutions.case_study.subtitle }}</p>
+</div>
+<div class="case-grid">
+{% for card in solutions.case_study.cards %}
+<article class="case-card">
+<img class="card-photo" loading="lazy" src="{{ card.image }}" alt="{{ card.title }}">
+<div class="case-tag">{{ card.tag }}</div>
+<h3>{{ card.title }}</h3>
+<p>{{ card.description }}</p>
+<a href="{{ card.link }}">{{ card.link_text }}</a>
+</article>
 {% endfor %}
 </div>
 </div>

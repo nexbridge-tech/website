@@ -46,6 +46,10 @@ this.externalLinks();
 
 this.currentYear();
 
+this.knowledgeFilter();
+
+this.siteSearch();
+
     },
 
     cache() {
@@ -94,13 +98,17 @@ if(entry.isIntersecting){
 
 entry.target.classList.add("show");
 
+observer.unobserve(entry.target);
+
 }
 
 });
 
 },{
 
-threshold:.15
+threshold:0,
+
+rootMargin:"0px 0px -10% 0px"
 
 });
 
@@ -458,6 +466,185 @@ alert("Email copied.");
 }
 
 }
+App.knowledgeFilter=function(){
+
+const grid=document.getElementById("blogGrid");
+
+if(!grid) return;
+
+const groups=Array.from(grid.querySelectorAll(".topic-group"));
+const chips=Array.from(document.querySelectorAll("#topicChips .topic-chip"));
+const searchInput=document.getElementById("knowledgeSearchInput");
+const emptyState=document.getElementById("knowledgeEmptyState");
+
+let activeTopic="all";
+
+const applyFilter=()=>{
+
+const query=(searchInput?.value||"").trim().toLowerCase();
+let anyVisible=false;
+
+groups.forEach(group=>{
+
+const topicMatches=activeTopic==="all"||group.dataset.topicGroup===activeTopic;
+let groupHasVisibleCard=false;
+
+group.querySelectorAll(".card").forEach(card=>{
+
+const matchesQuery=!query||card.dataset.search.includes(query);
+const show=topicMatches&&matchesQuery;
+
+card.style.display=show?"":"none";
+
+if(show) groupHasVisibleCard=true;
+
+});
+
+group.style.display=groupHasVisibleCard?"":"none";
+
+if(groupHasVisibleCard) anyVisible=true;
+
+});
+
+if(emptyState) emptyState.hidden=anyVisible;
+
+};
+
+chips.forEach(chip=>{
+
+chip.addEventListener("click",()=>{
+
+chips.forEach(c=>c.classList.remove("active"));
+chip.classList.add("active");
+activeTopic=chip.dataset.topic;
+
+applyFilter();
+
+});
+
+});
+
+if(searchInput){
+
+searchInput.addEventListener("input",applyFilter);
+
+}
+
+};
+App.siteSearch=function(){
+
+const trigger=document.getElementById("siteSearchTrigger");
+const overlay=document.getElementById("siteSearchOverlay");
+const input=document.getElementById("siteSearchInput");
+const results=document.getElementById("siteSearchResults");
+const closeBtn=document.getElementById("siteSearchClose");
+
+if(!trigger||!overlay||!input||!results) return;
+
+let indexData=null;
+let indexPromise=null;
+
+const loadIndex=()=>{
+
+if(!indexPromise){
+
+indexPromise=fetch("/search-index.json")
+.then(res=>res.json())
+.then(data=>{ indexData=data; return data; })
+.catch(()=>{ indexData=[]; return []; });
+
+}
+
+return indexPromise;
+
+};
+
+const open=()=>{
+
+overlay.classList.add("active");
+document.body.style.overflow="hidden";
+loadIndex();
+
+setTimeout(()=>input.focus(),50);
+
+};
+
+const close=()=>{
+
+overlay.classList.remove("active");
+document.body.style.overflow="";
+input.value="";
+results.innerHTML="";
+
+};
+
+const render=(query)=>{
+
+if(!indexData||!query){
+
+results.innerHTML="";
+
+return;
+
+}
+
+const q=query.toLowerCase();
+
+const matches=indexData.filter(item=>item.search.includes(q)).slice(0,10);
+
+if(!matches.length){
+
+results.innerHTML='<p class="search-empty">No results. Try a different keyword.</p>';
+
+return;
+
+}
+
+results.innerHTML=matches.map(item=>`
+<a class="search-result" href="${item.url}">
+<span class="search-result-type">${item.type}</span>
+<h4>${item.title}</h4>
+<p>${item.description}</p>
+</a>
+`).join("");
+
+};
+
+trigger.addEventListener("click",open);
+
+if(closeBtn){
+
+closeBtn.addEventListener("click",close);
+
+}
+
+overlay.addEventListener("click",e=>{
+
+if(e.target===overlay) close();
+
+});
+
+document.addEventListener("keydown",e=>{
+
+if(e.key==="Escape"&&overlay.classList.contains("active")) close();
+
+if((e.key==="k"||e.key==="K")&&(e.metaKey||e.ctrlKey)){
+
+e.preventDefault();
+
+open();
+
+}
+
+});
+
+input.addEventListener("input",()=>{
+
+loadIndex().then(()=>render(input.value.trim()));
+
+});
+
+};
 App.externalLinks=function(){
 
 document.querySelectorAll("a").forEach(link=>{

@@ -296,7 +296,7 @@ button{
 
 .section{
 
-    padding:100px 0;
+    padding:80px 0;
 
 }
 
@@ -311,6 +311,14 @@ button{
 .section-title.center{
 
     text-align:center;
+
+}
+
+.section-title.center p{
+
+    margin-left:auto;
+
+    margin-right:auto;
 
 }
 
@@ -1233,6 +1241,24 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
 
 }
 
+.contact-grid{
+
+    align-items:center;
+
+}
+
+.contact-info-panel{
+
+    background:var(--light);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:40px;
+
+}
+
 .mission-card{
 
     display:flex;
@@ -1556,6 +1582,198 @@ box-shadow:0 8px 30px rgba(0,0,0,.08);
     grid-template-columns:repeat(3,1fr);
 
     gap:26px;
+
+}
+
+/* =====================================================
+   KNOWLEDGE TOOLBAR (search + topic filter chips)
+===================================================== */
+
+.knowledge-toolbar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:22px;
+
+    margin:8px 0 40px;
+
+}
+
+.knowledge-search{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:480px;
+
+}
+
+.knowledge-search svg{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:18px;
+
+    height:18px;
+
+    color:var(--gray);
+
+    pointer-events:none;
+
+}
+
+.knowledge-search input{
+
+    width:100%;
+
+    padding:13px 18px 13px 48px;
+
+    border-radius:999px;
+
+    border:1px solid var(--border);
+
+    font-size:15px;
+
+    font-family:inherit;
+
+    color:var(--dark);
+
+    background:var(--white);
+
+}
+
+.knowledge-search input:focus{
+
+    outline:none;
+
+    border-color:var(--accent);
+
+    box-shadow:0 0 0 3px var(--accent-soft);
+
+}
+
+.topic-chips{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.topic-chip{
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    border:1px solid var(--border);
+
+    background:var(--white);
+
+    color:var(--gray);
+
+    font-size:13.5px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    white-space:nowrap;
+
+}
+
+.topic-chip:hover{
+
+    border-color:var(--accent);
+
+    color:var(--accent);
+
+}
+
+.topic-chip.active{
+
+    background:var(--primary);
+
+    border-color:var(--primary);
+
+    color:#fff;
+
+}
+
+.knowledge-groups{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:56px;
+
+}
+
+.topic-group-header{
+
+    display:flex;
+
+    align-items:baseline;
+
+    justify-content:space-between;
+
+    gap:16px;
+
+    margin-bottom:24px;
+
+    padding-bottom:14px;
+
+    border-bottom:2px solid var(--border);
+
+}
+
+.topic-group-header h3{
+
+    font-size:22px;
+
+    color:var(--primary);
+
+}
+
+.topic-group-count{
+
+    font-family:var(--font-mono);
+
+    font-size:13px;
+
+    color:var(--gray);
+
+    white-space:nowrap;
+
+}
+
+.knowledge-empty{
+
+    text-align:center;
+
+    color:var(--gray);
+
+    padding:50px 0;
+
+    font-size:15px;
 
 }
 
@@ -2306,7 +2524,7 @@ INDUSTRY CARD
 
     display:grid;
 
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 
     gap:26px;
 
@@ -3514,7 +3732,7 @@ QUOTE
 
     text-align:center;
 
-    padding:120px 0;
+    padding:20px 0;
 
 }
 
@@ -4151,15 +4369,6 @@ p{
 font-size:clamp(.95rem,1vw,1.08rem);
 
 }
-.section{
-
-padding:
-
-clamp(70px,8vw,130px)
-
-0;
-
-}
 .card{
 
 border-radius:
@@ -4555,6 +4764,22 @@ box-shadow:var(--shadow-lg);
 
 }
 
+.article-body img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+    margin:34px 0;
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+}
+
 .article-body code{
 
     background:#F1F3F6;
@@ -4566,5 +4791,421 @@ box-shadow:var(--shadow-lg);
     font-family:var(--font-mono);
 
     font-size:14px;
+
+}
+
+/* =====================================================
+   EXPANDABLE TECHNICAL DETAIL LAYER
+   (why-card, journey-step, solution-item as <details>)
+===================================================== */
+.why-card summary,
+.journey-step summary,
+.solution-item summary{
+
+    list-style:none;
+
+    cursor:pointer;
+
+}
+
+.why-card summary::-webkit-details-marker,
+.journey-step summary::-webkit-details-marker,
+.solution-item summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+.why-card summary::marker,
+.journey-step summary::marker,
+.solution-item summary::marker{
+
+    display:none;
+
+    content:"";
+
+}
+
+.why-card summary::after,
+.journey-step summary::after,
+.solution-item summary::after{
+
+    content:"+ More detail";
+
+    display:inline-block;
+
+    margin-top:14px;
+
+    color:var(--accent);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:.02em;
+
+}
+
+.why-card[open] summary::after,
+.journey-step[open] summary::after,
+.solution-item[open] summary::after{
+
+    content:"\2013 Less detail";
+
+}
+
+.card-detail{
+
+    margin-top:14px;
+
+    padding-top:14px;
+
+    border-top:1px solid var(--border);
+
+}
+
+.card-detail p{
+
+    color:var(--gray);
+
+    font-size:14px;
+
+    line-height:1.75;
+
+}
+
+.card-detail-link{
+
+    display:inline-block;
+
+    margin-top:12px;
+
+    color:var(--accent);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+.card-detail-link:hover{
+
+    text-decoration:underline;
+
+}
+
+.journey-step[open],
+.why-card[open],
+.solution-item[open]{
+
+    border-color:rgba(0,174,239,.35);
+
+}
+
+/* =====================================================
+   SITE SEARCH (header trigger + overlay panel)
+===================================================== */
+
+.search-trigger{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:50%;
+
+    border:1px solid var(--border);
+
+    background:none;
+
+    color:var(--dark);
+
+    cursor:pointer;
+
+    margin-left:8px;
+
+    transition:.2s;
+
+}
+
+.search-trigger:hover{
+
+    border-color:var(--accent);
+
+    color:var(--accent);
+
+}
+
+.search-trigger svg{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+.search-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(10,35,66,.6);
+
+    backdrop-filter:blur(2px);
+
+    z-index:999;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:center;
+
+    padding:10vh 20px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.25s;
+
+}
+
+.search-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.search-panel{
+
+    background:var(--white);
+
+    border-radius:var(--radius-lg);
+
+    width:100%;
+
+    max-width:640px;
+
+    max-height:70vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-lg);
+
+    transform:translateY(-16px);
+
+    transition:.25s;
+
+}
+
+.search-overlay.active .search-panel{
+
+    transform:translateY(0);
+
+}
+
+.search-panel-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px 20px;
+
+    border-bottom:1px solid var(--border);
+
+    flex-shrink:0;
+
+}
+
+.search-panel-header svg{
+
+    width:20px;
+
+    height:20px;
+
+    color:var(--gray);
+
+    flex-shrink:0;
+
+}
+
+.search-panel-header input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    font-size:17px;
+
+    font-family:inherit;
+
+    color:var(--dark);
+
+}
+
+.search-close{
+
+    border:none;
+
+    background:none;
+
+    font-size:24px;
+
+    line-height:1;
+
+    color:var(--gray);
+
+    cursor:pointer;
+
+    padding:4px;
+
+}
+
+.search-close:hover{
+
+    color:var(--dark);
+
+}
+
+.search-results{
+
+    overflow-y:auto;
+
+    padding:8px;
+
+}
+
+.search-result{
+
+    display:block;
+
+    padding:14px 16px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:.15s;
+
+}
+
+.search-result:hover{
+
+    background:var(--light);
+
+}
+
+.search-result-type{
+
+    display:inline-block;
+
+    font-family:var(--font-mono);
+
+    font-size:11px;
+
+    letter-spacing:.05em;
+
+    text-transform:uppercase;
+
+    color:var(--accent);
+
+    margin-bottom:6px;
+
+}
+
+.search-result h4{
+
+    font-size:15.5px;
+
+    color:var(--primary);
+
+    margin-bottom:4px;
+
+}
+
+.search-result p{
+
+    font-size:13.5px;
+
+    color:var(--gray);
+
+    line-height:1.5;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:2;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}
+
+.search-empty{
+
+    text-align:center;
+
+    color:var(--gray);
+
+    padding:30px 16px;
+
+    font-size:14.5px;
+
+}
+
+@media (max-width:600px){
+
+    .search-overlay{
+
+        padding:0;
+
+    }
+
+    .search-panel{
+
+        max-width:none;
+
+        width:100%;
+
+        height:100%;
+
+        max-height:none;
+
+        border-radius:0;
+
+    }
+
+}
+
+.why-nexbridge-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:26px;
 
 }

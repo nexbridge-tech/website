@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#0A2342"/>
+</marker>
+<marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#00AEEF"/>
+</marker>
+<pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+<path d="M28,0 H0 V28" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+</pattern>
+</defs>
+<rect width="1200" height="640" fill="#F8FAFC"/>
+<rect width="1200" height="640" fill="url(#grid)"/>
+<rect x="0.5" y="0.5" width="1199" height="639" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+<g>
+<rect x="290" y="70" width="620" height="157.33333333333334" rx="10" fill="#FFFFFF" stroke="#0A2342" stroke-width="2"/>
+<text x="600" y="153.7866666666667" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#111827">Heatsink / Cold Plate</text>
+</g><g>
+<rect x="290" y="241.33333333333334" width="620" height="157.33333333333334" rx="10" fill="#EAF9FF" stroke="#00AEEF" stroke-width="3"/>
+<text x="600" y="325.12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#111827">Thermal Interface Material</text>
+</g><text x="1000" y="311" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#00AEEF">Bond-line thickness</text>
+<text x="1000" y="329" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#00AEEF">drives resistance</text><line x1="910" y1="320" x2="936" y2="320" stroke="#00AEEF" stroke-width="2.5"/><g>
+<rect x="290" y="412.6666666666667" width="620" height="157.33333333333334" rx="10" fill="#FFFFFF" stroke="#0A2342" stroke-width="2"/>
+<text x="600" y="496.4533333333334" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#111827">Component / Power Module</text>
+</g>
+<text x="600" y="614" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#6B7280">MOUNTING PRESSURE DECIDES THE REAL BOND LINE</text>
+</svg>

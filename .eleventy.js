@@ -8,7 +8,6 @@ module.exports = function (eleventyConfig) {
 
   // Site assets - these stay as plain files, not templates
   eleventyConfig.addPassthroughCopy("robots.txt");
-  eleventyConfig.addPassthroughCopy("sitemap.xml");
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("script.js");
   eleventyConfig.addPassthroughCopy("assets");
@@ -22,16 +21,58 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("README.md");
   eleventyConfig.ignores.add("node_modules/**");
 
-  // Knowledge articles collection, newest first
+  // Knowledge articles collection, newest first (drafts excluded)
   eleventyConfig.addCollection("knowledgeArticles", function (collectionApi) {
     return collectionApi
-      .getFilteredByGlob("content/knowledge/*.md")
+      .getAll()
+      .filter((item) => item.filePathStem.startsWith("/content/knowledge/") && !item.data.draft)
       .sort((a, b) => b.data.date - a.data.date);
+  });
+
+  // Fixed display order for Knowledge topic groups (biggest/most central first)
+  const KNOWLEDGE_TOPIC_ORDER = [
+    "Automotive & EV Power Electronics",
+    "Engineering Consulting & Process",
+    "Energy Storage Systems",
+    "Semiconductor & Manufacturing",
+    "Industrial Networking & Automation",
+    "Career & Culture",
+    "Thermal Management",
+    "AI Infrastructure",
+  ];
+
+  // Knowledge articles grouped by primary topic, each group newest-first
+  eleventyConfig.addCollection("knowledgeByTopic", function (collectionApi) {
+    const articles = collectionApi
+      .getAll()
+      .filter((item) => item.filePathStem.startsWith("/content/knowledge/") && !item.data.draft);
+
+    return KNOWLEDGE_TOPIC_ORDER.map((topic) => ({
+      topic,
+      articles: articles
+        .filter((item) => item.data.topic === topic)
+        .sort((a, b) => b.data.date - a.data.date),
+    })).filter((group) => group.articles.length > 0);
+  });
+
+  // Solution area detail subpages, for the sitemap
+  eleventyConfig.addCollection("solutionPages", function (collectionApi) {
+    return collectionApi.getAll().filter((item) => item.filePathStem.startsWith("/content/solutions/"));
+  });
+
+  // Draft articles get no output page at all, not just hidden from listings
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    permalink: (data) => (data.draft ? false : data.permalink),
   });
 
   // Human-readable date filter, e.g. "July 1, 2026"
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(new Date(dateObj), { zone: "utc" }).toFormat("LLLL d, yyyy");
+  });
+
+  // ISO date filter for sitemap <lastmod> values, e.g. "2026-07-01"
+  eleventyConfig.addFilter("isoDate", (dateObj) => {
+    return DateTime.fromJSDate(new Date(dateObj), { zone: "utc" }).toFormat("yyyy-MM-dd");
   });
 
   return {
@@ -41,7 +82,7 @@ module.exports = function (eleventyConfig) {
       data: "_data",
       output: "_site",
     },
-    templateFormats: ["md", "njk"],
+    templateFormats: ["md", "njk", "11ty.js"],
     markdownTemplateEngine: "njk",
   };
 };

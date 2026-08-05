@@ -20,6 +20,18 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "article.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", format: "yyyy-MM-dd" }
+      - label: "Topic (primary grouping shown on the Knowledge page)"
+        name: "topic"
+        widget: "select"
+        options:
+          - "Automotive & EV Power Electronics"
+          - "Energy Storage Systems"
+          - "Thermal Management"
+          - "Industrial Networking & Automation"
+          - "Semiconductor & Manufacturing"
+          - "AI Infrastructure"
+          - "Engineering Consulting & Process"
+          - "Career & Culture"
       - label: "Tags"
         name: "tags"
         widget: "select"
@@ -37,9 +49,25 @@ collections:
           - "Thermal Management"
           - "Industrial Networking"
           - "Supply Chain"
+          - "Energy Storage"
+          - "Automotive / EV Powertrain"
       - { label: "Excerpt", name: "excerpt", widget: "text", hint: "Short summary shown on the Knowledge listing page and in search results." }
       - { label: "Cover Image", name: "image", widget: "image", required: false }
       - { label: "Draft", name: "draft", widget: "boolean", default: true, hint: "Draft articles are hidden from the live site until this is turned off." }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "solutions-detail"
+    label: "Solution Detail Pages"
+    folder: "content/solutions"
+    create: false
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "solution-detail.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Eyebrow (short category label)", name: "eyebrow", widget: "string" }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "pages"
@@ -167,6 +195,7 @@ collections:
                   - { label: "Number", name: "number", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Detail (shown on expand)", name: "detail", widget: "text" }
           - label: "Journey Process"
             name: "journey_process"
             widget: "object"
@@ -179,6 +208,8 @@ collections:
                 fields:
                   - { label: "Number", name: "number", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "Detail (shown on expand)", name: "detail", widget: "text" }
           - label: "Solution Areas"
             name: "solution_area"
             widget: "object"
@@ -190,8 +221,11 @@ collections:
                 name: "items"
                 widget: "list"
                 fields:
+                  - { label: "Icon", name: "icon", widget: "select", options: ["battery", "thermometer", "network", "robot", "server", "chip", "compass"] }
                   - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Page Slug (matches a page in Solution Detail Pages)", name: "slug", widget: "string", required: false }
                   - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Detail (shown on expand)", name: "detail", widget: "text" }
           - label: "Design Services"
             name: "design_services"
             widget: "object"
@@ -244,6 +278,24 @@ collections:
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
+          - label: "Representative Engineering Scenarios"
+            name: "case_study"
+            widget: "object"
+            hint: "Illustrative scenarios only — do not attribute real client names or claimed specific results here."
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Photo", name: "image", widget: "image" }
+                  - { label: "Tag", name: "tag", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Link Text", name: "link_text", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
           - label: "Featured Technologies"
             name: "technology"
             widget: "object"
@@ -433,63 +485,37 @@ collections:
                 name: "mission_cards"
                 widget: "list"
                 fields:
-                  - { label: "Icon", name: "icon", widget: "select", options: ["target", "eye", "compass", "commitment"] }
+                  - { label: "Icon", name: "icon", widget: "select", options: ["target", "eye"] }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
-          - label: "Stats"
-            name: "stats"
+          - label: "Our Focus Areas"
+            name: "focus_areas"
             widget: "object"
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtitle", widget: "text" }
-              - label: "Items"
-                name: "items"
-                widget: "list"
-                fields:
-                  - { label: "Target Number", name: "target", widget: "number" }
-                  - { label: "Label", name: "label", widget: "string" }
-          - label: "Company Journey"
-            name: "timeline_company"
-            widget: "object"
-            fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtitle", widget: "text" }
-              - label: "Milestones"
-                name: "items"
-                widget: "list"
-                fields:
-                  - { label: "Year (type 'current' for auto-updating current year)", name: "year", widget: "string" }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
-          - label: "Philosophy"
-            name: "philosophy"
-            widget: "object"
-            fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - { label: "Illustration", name: "image", widget: "image", required: false }
               - label: "Cards"
                 name: "cards"
                 widget: "list"
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
-          - label: "The NexBridge Way"
-            name: "bridge_way"
+          - label: "How We Work"
+            name: "how_we_work"
             widget: "object"
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
+              - { label: "Illustration", name: "image", widget: "image", required: false }
               - label: "Steps"
                 name: "steps"
                 widget: "list"
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
-          - label: "Our Values"
-            name: "values"
+          - label: "Why NexBridge"
+            name: "why_nexbridge"
             widget: "object"
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
@@ -500,6 +526,15 @@ collections:
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
+          - label: "Closing"
+            name: "closing"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
 
       - name: "contact"
         label: "Contact Page"

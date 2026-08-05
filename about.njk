@@ -7,9 +7,7 @@ eleventyComputed:
 ---
 {% set micons = {
   "target": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>',
-  "eye": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>',
-  "compass": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-2 6-6 2 2-6z"/></svg>',
-  "commitment": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>'
+  "eye": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>'
 } %}
 <section class="page-header">
 <div class="hero-glow"></div>
@@ -20,9 +18,9 @@ eleventyComputed:
 </div>
 </section>
 
-<section class="overview section fade-up">
+<section class="overview section fade-up" style="padding:50px 0">
 <div class="container">
-<div class="overview-grid">
+<div class="overview-grid" style="align-items:center">
 <div class="overview-desc">
 <span class="small-title">{{ about.overview.small_title }}</span>
 <h2>{{ about.overview.title }}</h2>
@@ -46,57 +44,16 @@ eleventyComputed:
 </div>
 </section>
 
-<section class="stats">
+<section class="focus-areas section" style="padding:40px 0">
 <div class="container">
 <div class="section-title center">
-<span>{{ about.stats.eyebrow }}</span>
-<h2>{{ about.stats.title }}</h2>
-<p>{{ about.stats.subtitle }}</p>
+<span>{{ about.focus_areas.eyebrow }}</span>
+<h2>{{ about.focus_areas.title }}</h2>
 </div>
-<div class="stats-grid">
-{% for item in about.stats.items %}
-<div class="stat-card">
-<div class="stat-number" data-target="{{ item.target }}">0</div>
-<div class="stat-label">{{ item.label }}</div>
-</div>
-{% endfor %}
-</div>
-</div>
-</section>
-
-<section class="timeline-company section">
-<div class="container">
-<div class="section-title center">
-<span>{{ about.timeline_company.eyebrow }}</span>
-<h2>{{ about.timeline_company.title }}</h2>
-<p>{{ about.timeline_company.subtitle }}</p>
-</div>
-<div class="journey">
-{% for item in about.timeline_company.items %}
-<div class="journey-item">
-<div class="year">
-{% if item.year == "current" %}<span id="year"></span>{% else %}{{ item.year }}{% endif %}
-</div>
-<div class="content">
-<h3>{{ item.title }}</h3>
-<p>{{ item.description }}</p>
-</div>
-</div>
-{% endfor %}
-</div>
-</div>
-</section>
-
-<section class="philosophy section">
-<div class="container">
-<div class="section-title center">
-<span>{{ about.philosophy.eyebrow }}</span>
-<h2>{{ about.philosophy.title }}</h2>
-<p>{{ about.philosophy.subtitle }}</p>
-</div>
-<div class="philosophy-grid">
-{% for card in about.philosophy.cards %}
-<div class="philosophy-card">
+<img src="{{ about.focus_areas.image }}" alt="{{ about.focus_areas.title }}" style="max-width:520px;margin:0 auto 36px;border-radius:16px;border:1px solid var(--border);display:block">
+<div class="values-grid">
+{% for card in about.focus_areas.cards %}
+<div class="value-box">
 <h3>{{ card.title }}</h3>
 <p>{{ card.description }}</p>
 </div>
@@ -105,14 +62,15 @@ eleventyComputed:
 </div>
 </section>
 
-<section class="bridge-way section">
+<section class="how-we-work section" style="padding:40px 0">
 <div class="container">
 <div class="section-title center">
-<span>{{ about.bridge_way.eyebrow }}</span>
-<h2>{{ about.bridge_way.title }}</h2>
+<span>{{ about.how_we_work.eyebrow }}</span>
+<h2>{{ about.how_we_work.title }}</h2>
 </div>
+<img src="{{ about.how_we_work.image }}" alt="{{ about.how_we_work.title }}" style="max-width:640px;margin:0 auto 36px;border-radius:16px;border:1px solid var(--border);display:block">
 <div class="bridge-flow">
-{% for step in about.bridge_way.steps %}
+{% for step in about.how_we_work.steps %}
 <div class="flow-item">
 <h3>{{ step.title }}</h3>
 <p>{{ step.description }}</p>
@@ -122,19 +80,28 @@ eleventyComputed:
 </div>
 </section>
 
-<section class="values section fade-up">
+<section class="why-nexbridge section fade-up" style="padding:40px 0">
 <div class="container">
-<div class="section-title">
-<span>{{ about.values.eyebrow }}</span>
-<h2>{{ about.values.title }}</h2>
+<div class="section-title center">
+<span>{{ about.why_nexbridge.eyebrow }}</span>
+<h2>{{ about.why_nexbridge.title }}</h2>
 </div>
 <div class="values-grid">
-{% for card in about.values.cards %}
+{% for card in about.why_nexbridge.cards %}
 <div class="value-box">
 <h3>{{ card.title }}</h3>
 <p>{{ card.description }}</p>
 </div>
 {% endfor %}
 </div>
+</div>
+</section>
+
+<section class="closing section fade-up" style="padding:40px 0 80px">
+<div class="container" style="max-width:760px;text-align:center">
+<h2>{{ about.closing.title }}</h2>
+{% for p in about.closing.paragraphs %}
+<p style="margin-top:18px;font-size:17px;line-height:1.8;color:var(--gray)">{{ p }}</p>
+{% endfor %}
 </div>
 </section>

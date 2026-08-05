@@ -1,13 +1,14 @@
 {
   "name": "nexbridge-website",
   "version": "1.0.0",
-  "description": "NexBridge Technology website",
+  "description": "NexBridge Solutions website",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "clean": "node -e \"require('fs').rmSync('_site',{recursive:true,force:true})\"",
+    "start": "npm run clean && eleventy --serve",
+    "build": "npm run clean && eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^3.1.6"
   },
   "dependencies": {
     "luxon": "^3.4.4"

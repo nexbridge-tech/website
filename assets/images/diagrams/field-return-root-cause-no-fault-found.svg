@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#0A2342"/>
+</marker>
+<marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#00AEEF"/>
+</marker>
+<pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+<path d="M28,0 H0 V28" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+</pattern>
+</defs>
+<rect width="1200" height="640" fill="#F8FAFC"/>
+<rect width="1200" height="640" fill="url(#grid)"/>
+<rect x="0.5" y="0.5" width="1199" height="639" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="80" y="90" width="480" height="420" rx="12" fill="#FFFFFF" stroke="#0A2342" stroke-width="2.5"/><rect x="80" y="90" width="480" height="52" rx="12" fill="#0A2342"/><rect x="80" y="116" width="480" height="26" fill="#0A2342"/><text x="320" y="124" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">BENCH TEST</text><circle cx="114" cy="182" r="5" fill="#0A2342"/><text x="334" y="187" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="500" fill="#111827">Static conditions</text><circle cx="114" cy="244" r="5" fill="#0A2342"/><text x="334" y="249" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="500" fill="#111827">Single test pass</text><circle cx="114" cy="306" r="5" fill="#0A2342"/><text x="334" y="311" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="500" fill="#111827">Passes cleanly</text><rect x="640" y="90" width="480" height="420" rx="12" fill="#FFFFFF" stroke="#00AEEF" stroke-width="2.5"/><rect x="640" y="90" width="480" height="52" rx="12" fill="#00AEEF"/><rect x="640" y="116" width="480" height="26" fill="#00AEEF"/><text x="880" y="124" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">FIELD CONDITION</text><circle cx="674" cy="182" r="5" fill="#00AEEF"/><text x="894" y="187" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="500" fill="#111827">Intermittent trigger</text><circle cx="674" cy="244" r="5" fill="#00AEEF"/><text x="894" y="249" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="500" fill="#111827">Condition-dependent</text><circle cx="674" cy="306" r="5" fill="#00AEEF"/><text x="894" y="311" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="500" fill="#111827">Fails in service</text><text x="600" y="306" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#6B7280">vs</text>
+<text x="600" y="614" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#6B7280">“NO FAULT FOUND” IS A TEST-COVERAGE GAP</text>
+</svg>

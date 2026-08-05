@@ -5,6 +5,20 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Security headers. CSP starts in Report-Only mode — it logs violations
+# without blocking anything, so nothing here can break the Netlify Identity
+# widget, Decap CMS, Google Fonts or the Web3Forms contact form. Once the
+# browser console / Netlify's report endpoint show no unexpected violations,
+# switch Content-Security-Policy-Report-Only to Content-Security-Policy to enforce it.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self' https://identity.netlify.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://identity.netlify.com https://api.netlify.com; form-action 'self' https://api.web3forms.com; frame-ancestors 'self'; base-uri 'self'"
+
 # Explicit rewrites so clean URLs (without .html) always work reliably,
 # regardless of the "Pretty URLs" dashboard setting's behavior.
 [[redirects]]

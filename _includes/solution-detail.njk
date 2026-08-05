@@ -1,0 +1,30 @@
+---
+layout: base.njk
+permalink: "solutions/{{ page.fileSlug }}.html"
+---
+<section class="page-header">
+<div class="hero-glow"></div>
+<div class="container">
+<span class="hero-eyebrow">Solutions · {{ eyebrow }}</span>
+<h1>{{ title }}</h1>
+</div>
+</section>
+
+<article class="section">
+<div class="container" style="max-width:760px">
+
+{% if image %}
+<img class="card-photo" style="aspect-ratio:16/9" src="{{ image }}" alt="{{ title }}">
+{% endif %}
+
+<div class="article-body">
+{{ content | safe }}
+</div>
+
+<div style="margin-top:48px;display:flex;gap:16px;flex-wrap:wrap">
+<a href="/solutions.html" class="btn btn-outline">&larr; Back To Solutions</a>
+<a href="/contact.html" class="btn btn-primary">Talk To An Engineer</a>
+</div>
+
+</div>
+</article>

@@ -7,6 +7,34 @@ eleventyComputed:
 ---
 <section class="hero-banner" style="padding-bottom:70px">
 <div class="hero-glow"></div>
+<div class="hero-network">
+<svg viewBox="0 0 900 520" preserveAspectRatio="xMaxYMid slice">
+<g stroke="#00AEEF" stroke-width="1" opacity=".35">
+<line x1="560" y1="90" x2="700" y2="60"/>
+<line x1="700" y1="60" x2="830" y2="140"/>
+<line x1="560" y1="90" x2="640" y2="200"/>
+<line x1="640" y1="200" x2="800" y2="230"/>
+<line x1="640" y1="200" x2="560" y2="320"/>
+<line x1="560" y1="320" x2="700" y2="400"/>
+<line x1="700" y1="400" x2="850" y2="380"/>
+<line x1="800" y1="230" x2="850" y2="380"/>
+<line x1="800" y1="230" x2="830" y2="140"/>
+<line x1="560" y1="320" x2="480" y2="230"/>
+<line x1="480" y1="230" x2="560" y2="90"/>
+</g>
+<g fill="#00AEEF">
+<circle class="hero-node" cx="560" cy="90" r="4" style="animation-delay:0s"/>
+<circle class="hero-node" cx="700" cy="60" r="3" style="animation-delay:.4s"/>
+<circle class="hero-node" cx="830" cy="140" r="5" style="animation-delay:.8s"/>
+<circle class="hero-node" cx="640" cy="200" r="4" style="animation-delay:1.2s"/>
+<circle class="hero-node" cx="800" cy="230" r="3.5" style="animation-delay:1.6s"/>
+<circle class="hero-node" cx="560" cy="320" r="4.5" style="animation-delay:.6s"/>
+<circle class="hero-node" cx="700" cy="400" r="3.5" style="animation-delay:1s"/>
+<circle class="hero-node" cx="850" cy="380" r="4" style="animation-delay:1.8s"/>
+<circle class="hero-node" cx="480" cy="230" r="3" style="animation-delay:2s"/>
+</g>
+</svg>
+</div>
 <div class="container">
 <div class="hero-banner-inner" style="max-width:640px">
 <span class="hero-eyebrow">{{ contact.hero.eyebrow }}</span>
@@ -16,7 +44,7 @@ eleventyComputed:
 </div>
 </section>
 
-<section class="testimonial section fade-up">
+<section class="testimonial section fade-up" style="padding-bottom:40px">
 <div class="container">
 <div class="section-title center">
 <span>{{ contact.testimonial.eyebrow }}</span>
@@ -42,9 +70,9 @@ eleventyComputed:
 </div>
 </section>
 
-<section class="section">
+<section class="section" style="padding-top:40px">
 <div class="container">
-<div class="overview-grid">
+<div class="overview-grid contact-grid">
 
 <div>
 <div class="section-title">
@@ -78,6 +106,8 @@ eleventyComputed:
 </form>
 </div>
 
+<div class="contact-info-panel">
+
 <div class="mission-cards" style="grid-template-columns:1fr">
 
 <div class="mission-card">
@@ -95,6 +125,7 @@ eleventyComputed:
 <div><h3>LinkedIn</h3><p><a href="{{ contact.info.linkedin_url }}" target="_blank" rel="noopener">{{ contact.info.linkedin_label }}</a></p></div>
 </div>
 
+</div>
 </div>
 </div>
 </div>

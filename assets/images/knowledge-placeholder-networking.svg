@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0A2342"/>
+<stop offset="45%" stop-color="#0D2C52"/>
+<stop offset="100%" stop-color="#08192E"/>
+</linearGradient>
+<radialGradient id="glow" cx="82%" cy="8%" r="60%">
+<stop offset="0%" stop-color="#00AEEF" stop-opacity="0.30"/>
+<stop offset="70%" stop-color="#00AEEF" stop-opacity="0"/>
+</radialGradient>
+<pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+<circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.06"/>
+</pattern>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#dots)"/>
+<rect width="1600" height="900" fill="url(#glow)"/>
+<g transform="translate(800,388) scale(3.1)">
+<circle cx="0" cy="-52" r="10" fill="none" stroke="#00AEEF" stroke-width="3"/><circle cx="-52" cy="30" r="10" fill="none" stroke="#00AEEF" stroke-width="3"/><circle cx="52" cy="30" r="10" fill="none" stroke="#00AEEF" stroke-width="3"/><circle cx="0" cy="62" r="10" fill="none" stroke="#00AEEF" stroke-width="3"/><circle cx="0" cy="4" r="13" fill="#00AEEF"/><path d="M0,-42 L0,-9 M-42,26 L-11,10 M42,26 L11,10 M0,17 L0,52" stroke="#00AEEF" stroke-width="3"/>
+</g>
+<text x="800" y="640" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="6" fill="#00AEEF" font-weight="700">INDUSTRIAL NETWORKING</text>
+<text x="800" y="690" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="2" fill="#ffffff" fill-opacity="0.45">NexBridge Solutions</text>
+</svg>

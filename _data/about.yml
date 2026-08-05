@@ -1,98 +1,68 @@
-seo_title: "About | NexBridge Technology"
-seo_description: "The story, philosophy and values behind NexBridge Technology."
+seo_title: "About | NexBridge Solutions"
+seo_description: "The story, focus areas and values behind NexBridge Solutions."
 
 page_header:
   eyebrow: "About"
-  title: "Built On Real Engineering Experience"
-  subtitle: "Why NexBridge exists, and the philosophy behind how we work with every customer."
+  title: "Built On Real Industry Experience"
+  subtitle: "NexBridge was created to make it easier for Vietnamese companies to find and work with the right global technology partners."
 
 overview:
   small_title: "DESCRIPTION"
   title: "Who We Are"
   paragraphs:
-    - "NexBridge Technology connects Vietnamese manufacturers, OEMs and system integrators with the right global technology partners — from semiconductor suppliers like TI and NXP to energy storage and renewable energy technology partners — to solve real engineering problems."
-    - "Rather than pushing products, we start with the problem: understanding the application, the operating conditions and the constraints, then matching it to a component, material or partner that actually fits."
-    - "Drawing on hands-on experience from the front lines of Vietnam's electric vehicle industry, we bring practical, application-tested knowledge to every recommendation we make."
+    - "NexBridge connects Vietnamese manufacturers, OEMs and system integrators with global technology partners in semiconductors, energy storage, renewable energy and industrial solutions. We start with the application and its real constraints, not a product catalogue."
+    - "Our approach is built on practical experience in Vietnam's automotive, EV, electronics and industrial sectors — so we understand both the engineering requirements and the realities of getting a project built."
   mission_cards:
     - icon: target
       title: "Our Mission"
-      description: "To empower Vietnamese industries by connecting them with the right global technologies to solve real engineering problems."
+      description: "Help Vietnamese companies access suitable global technologies and turn them into practical, workable solutions."
     - icon: eye
       title: "Our Vision"
-      description: "To be the most trusted engineering bridge between global technology innovators and Vietnamese industry."
-    - icon: compass
-      title: "Our Approach"
-      description: "Understand – Connect – Integrate – Deliver – Support."
-    - icon: commitment
-      title: "Our Commitment"
-      description: "Integrity, partnership and long-term value creation for our customers and communities."
+      description: "Become the trusted connection between global technology companies and Vietnamese industry."
 
-stats:
-  eyebrow: "OUR IMPACT"
-  title: "Delivering Engineering Excellence"
-  subtitle: "We help industrial manufacturers, system integrators and technology partners accelerate projects through trusted engineering solutions."
-  items:
-    - target: 20
-      label: "Global Technology Partners"
-    - target: 150
-      label: "Industrial Projects Supported"
-    - target: 8
-      label: "Strategic Industries"
-    - target: 100
-      label: "Customer-Focused Solutions"
-
-timeline_company:
-  eyebrow: "OUR JOURNEY"
-  title: "Growing Together With Industry"
-  subtitle: "Our vision is to become Vietnam's trusted engineering bridge connecting global technologies with local industries."
-  items:
-    - year: "current"
-      title: "NexBridge Founded"
-      description: "Established with the mission of connecting global engineering solutions to Vietnam."
-    - year: "2027"
-      title: "Regional Partnerships"
-      description: "Expand cooperation with strategic technology partners across Asia-Pacific."
-    - year: "2030"
-      title: "Engineering Platform"
-      description: "Build a digital engineering marketplace connecting manufacturers and solution providers."
-    - year: "2035"
-      title: "Leading Engineering Ecosystem"
-      description: "Become one of Southeast Asia's most trusted industrial technology bridges."
-
-philosophy:
-  eyebrow: "OUR PHILOSOPHY"
-  title: "We Build Value Before We Build Business"
-  subtitle: "At NexBridge, success is not measured by the number of products sold, but by the long-term value we create for our customers, partners and the industries we serve."
+focus_areas:
+  eyebrow: "OUR FOCUS AREAS"
+  title: "Where We Work"
+  image: "/assets/images/diagrams/about-focus-areas.svg"
   cards:
-    - title: "Think Long Term"
-      description: "Sustainable partnerships always outperform short-term transactions."
-    - title: "Engineering Before Sales"
-      description: "We seek to understand the problem before recommending any solution."
-    - title: "Trust Creates Opportunity"
-      description: "Trust is earned through honesty, expertise and consistent delivery."
+    - title: "Semiconductors & Electronic Components"
+      description: "For automotive, industrial electronics, embedded systems and power electronics."
+    - title: "Energy Storage & Renewable Energy"
+      description: "Battery systems, BMS, PCS and container integration for storage and renewable projects."
+    - title: "Engineering & Process Solutions"
+      description: "Requirements management, traceability, ASPICE and cross-functional workflows."
+    - title: "Industrial Technology"
+      description: "Automation, materials and technical solutions for manufacturers and integrators."
 
-bridge_way:
-  eyebrow: "THE NEXBRIDGE WAY"
-  title: "How We Work"
+how_we_work:
+  eyebrow: "HOW WE WORK"
+  title: "From First Conversation To Working Project"
+  image: "/assets/images/diagrams/about-how-we-work.svg"
   steps:
     - title: "Listen"
-      description: "Understand the customer's business, not just the technical specification."
-    - title: "Learn"
-      description: "Research technologies, evaluate suppliers and compare approaches."
+      description: "Understand the application, the real problem and the technical constraints."
+    - title: "Evaluate"
+      description: "Review requirements and identify suitable technologies and partners."
     - title: "Connect"
-      description: "Bring together the right people, the right technologies and the right partners."
-    - title: "Create Value"
-      description: "Deliver sustainable outcomes that continue long after the project is completed."
+      description: "Bring together the right customer, technology and people."
+    - title: "Support"
+      description: "Help both sides move from first discussion to a practical, working project."
 
-values:
-  eyebrow: "OUR VALUES"
-  title: "What We Believe"
+why_nexbridge:
+  eyebrow: "WHY NEXBRIDGE"
+  title: "Why Customers Work With Us"
   cards:
-    - title: "Integrity"
-      description: "Always keep promises and act with honesty, even when it is difficult."
-    - title: "Expertise"
-      description: "Knowledge comes before products. Every recommendation is based on engineering."
-    - title: "Partnership"
-      description: "Long-term relationships are more valuable than short-term transactions."
-    - title: "Innovation"
-      description: "Continuously explore emerging technologies to create future-ready solutions."
+    - title: "Practical, Not Theoretical"
+      description: "Recommendations come from real experience with engineering teams and complex projects — not a sales pitch."
+    - title: "Engineering Before Sales"
+      description: "We understand the problem first, and only recommend what is technically suitable and commercially realistic."
+    - title: "Local Understanding, Global Reach"
+      description: "We know how Vietnamese customers work, and help global partners access this market."
+    - title: "Built For The Long Term"
+      description: "We aim for relationships that create lasting value, not one-time transactions."
+
+closing:
+  title: "Connecting Technology With Opportunity"
+  paragraphs:
+    - "For Vietnamese companies, NexBridge provides access to technologies, suppliers and expertise that may otherwise be hard to identify or evaluate. For global technology partners, we provide local market understanding and practical support in Vietnam."
+    - "NexBridge stands between the two sides — not simply as an intermediary, but as a partner that understands the technology, the market and the work required to bring them together."
