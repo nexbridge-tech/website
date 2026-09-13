@@ -92,6 +92,7 @@ eleventyComputed:
 <div><h3>Supply Risk Control</h3><p>Alternative-part evaluation, supplier comparison, documentation gaps, delivery tracking and issue escalation around the project milestone.</p></div>
 </div>
 <div class="solution-output"><b>Typical outputs</b><p>Prototype parts · Assembled PCBAs · DFM findings · BOM and approved alternatives · Supplier decision matrix · Build and inspection records</p></div>
+<p><a href="/solutions/pcb-design-pcba-vietnam.html" class="card-detail-link">PCB design, component layout &amp; PCBA manufacturing in Vietnam &rarr;</a></p>
 </div>
 </article>
 
@@ -140,6 +141,25 @@ eleventyComputed:
 <div class="solution-output"><b>What ERP/MES will not fix by itself</b><p>Unclear process ownership · Invalid master data · Unstable BOMs and routings · Weak production discipline · Incentives that reward local optimization · Management decisions made outside the system</p></div>
 </div>
 </article>
+</div>
+</section>
+
+<section class="section" aria-labelledby="solution-applications-title">
+<div class="container">
+<div class="section-title center">
+<span>APPLICATION AREAS</span>
+<h2 id="solution-applications-title">Explore Our Technical Solutions</h2>
+<p>Explore the challenges, engineering scope and deliverables for your application.</p>
+</div>
+<div class="solution-capability-grid">
+{% for solution in collections.solutionPages %}
+<div>
+<h3><a href="{{ solution.url }}">{{ solution.data.title }}</a></h3>
+<p>{{ solution.data.summary }}</p>
+<a href="{{ solution.url }}" class="card-detail-link">Explore {{ solution.data.title }} &rarr;</a>
+</div>
+{% endfor %}
+</div>
 </div>
 </section>
 

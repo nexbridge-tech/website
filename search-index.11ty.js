@@ -12,7 +12,7 @@ module.exports = class {
     items.push(
       {
         title: "Home",
-        url: "/index.html",
+        url: "/",
         description: "NexBridge Solutions — engineering-led sourcing and consulting for energy storage, EV power electronics, thermal management and industrial automation.",
         type: "Page",
       },
@@ -61,7 +61,7 @@ module.exports = class {
       items.push({
         title: page.data.title,
         url: page.url,
-        description: `Solutions · ${page.data.eyebrow || ""}`,
+        description: page.data.description || page.data.summary || page.data.eyebrow || "",
         type: "Solution",
       });
     }

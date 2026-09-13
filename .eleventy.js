@@ -1,6 +1,8 @@
 const { DateTime } = require("luxon");
+const seo = require("./lib/seo");
 
 module.exports = function (eleventyConfig) {
+  for (const [name, filter] of Object.entries(seo)) eleventyConfig.addFilter(name, filter);
 
   // CRITICAL: Eleventy doesn't read .yml files as data by default -
   // this teaches it to. Without this, every _data/*.yml file is silently ignored.
@@ -105,8 +107,12 @@ module.exports = function (eleventyConfig) {
 
   // Solution area detail subpages, for the sitemap
   eleventyConfig.addCollection("solutionPages", function (collectionApi) {
-    return collectionApi.getAll().filter((item) => item.filePathStem.startsWith("/content/solutions/"));
+    return collectionApi.getAll().filter((item) => item.filePathStem.startsWith("/content/solutions/") && !item.data.draft && !item.data.noindex);
   });
+
+  eleventyConfig.addCollection("indexablePages", (api) => api.getAll().filter(item =>
+    item.url && (item.url === "/" || item.url.endsWith(".html")) && !item.data.noindex && !item.data.draft
+  ));
 
   // Draft articles get no output page at all, not just hidden from listings
   eleventyConfig.addGlobalData("eleventyComputed", {

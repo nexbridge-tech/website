@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{ title }}</title>
-<meta name="description" content="{{ description or excerpt }}">
-{% if noindex %}<meta name="robots" content="noindex,nofollow">{% endif %}
-<link rel="canonical" href="https://nexbridge.vn{{ page.url }}">
-<meta property="og:type" content="{% if layout == 'article.njk' %}article{% else %}website{% endif %}">
+{% set seoDescription = description or excerpt or summary %}
+{% set seoImage = image or '/assets/images/design-pcba.jpg' %}
+<title>{{ title | forceescape }}</title>
+<meta name="description" content="{{ seoDescription | forceescape }}">
+{% if noindex %}<meta name="robots" content="noindex,follow">{% endif %}
+<link rel="canonical" href="{{ page.url | canonical }}">
+<meta property="og:type" content="{% if '/knowledge/' in page.url %}article{% else %}website{% endif %}">
 <meta property="og:site_name" content="NexBridge Solutions">
-<meta property="og:title" content="{{ title }}">
-<meta property="og:description" content="{{ description or excerpt }}">
-<meta property="og:url" content="https://nexbridge.vn{{ page.url }}">
-<meta property="og:image" content="https://nexbridge.vn{{ image or '/assets/og-image.jpg' }}">
+<meta property="og:title" content="{{ title | forceescape }}">
+<meta property="og:description" content="{{ seoDescription | forceescape }}">
+<meta property="og:url" content="{{ page.url | canonical }}">
+<meta property="og:image" content="{{ seoImage | canonical | forceescape }}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ title }}">
-<meta name="twitter:description" content="{{ description or excerpt }}">
-<meta name="twitter:image" content="https://nexbridge.vn{{ image or '/assets/og-image.jpg' }}">
-{% if layout == 'article.njk' %}<meta property="article:published_time" content="{{ date | isoDate }}">{% endif %}
+<meta name="twitter:title" content="{{ title | forceescape }}">
+<meta name="twitter:description" content="{{ seoDescription | forceescape }}">
+<meta name="twitter:image" content="{{ seoImage | canonical | forceescape }}">
+{% if '/knowledge/' in page.url %}<meta property="article:published_time" content="{{ date | isoDate }}">{% endif %}
+{% set structuredData = page.url | schema(title, seoDescription, date, image) %}
+{% if structuredData and not noindex %}<script type="application/ld+json">{{ structuredData | jsonLd | safe }}</script>{% endif %}
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="stylesheet" href="/style.css?v=20260813-mobile-qa-2">
 </head>
@@ -24,7 +28,7 @@
     </div>
     <div class="scroll-progress"></div>
 <header class="header"><div class="container navbar">
-<a href="/index.html" class="brand">
+<a href="/" class="brand">
     <svg class="brand-logo" viewBox="0 0 320 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NexBridge Solutions">
         <path d="M10 12 h22 v16 a7 7 0 0 0 0 14 v16 h-22 z" fill="none" stroke="#1B2A4A" stroke-width="3.5" stroke-linejoin="round"/>
         <path d="M62 12 h-22 v16 a7 7 0 0 1 0 14 v16 h22 z" fill="none" stroke="#5B9BD5" stroke-width="3.5" stroke-linejoin="round"/>
@@ -33,7 +37,7 @@
 </a>
 <nav aria-label="Primary Navigation">
 <ul class="nav-menu">
-<li><a href="/index.html"{% if page.url == "/index.html" %} class="active"{% endif %}>Home</a></li>
+<li><a href="/"{% if page.url == "/" or page.url == "/index.html" %} class="active"{% endif %}>Home</a></li>
 
 <li><a href="/solutions.html"{% if page.url and "/solutions" in page.url %} class="active"{% endif %}>Solutions</a></li>
 

@@ -1,0 +1,5 @@
+<nav aria-label="Breadcrumb" class="container" style="padding-top:24px">
+<a href="/">Home</a> &rsaquo;
+{% if '/knowledge/' in page.url %}<a href="/knowledge.html">Knowledge</a>{% else %}<a href="/solutions.html">Solutions</a>{% endif %}
+&rsaquo; <span aria-current="page">{{ title | forceescape }}</span>
+</nav>

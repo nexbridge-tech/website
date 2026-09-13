@@ -5,7 +5,8 @@
   "scripts": {
     "clean": "node -e \"require('fs').rmSync('_site',{recursive:true,force:true})\"",
     "start": "npm run clean && eleventy --serve",
-    "build": "npm run clean && eleventy"
+    "build": "npm run clean && eleventy",
+    "check:seo": "eleventy && node scripts/verify-seo.cjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6"

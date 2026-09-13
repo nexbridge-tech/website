@@ -11,6 +11,7 @@ permalink: "knowledge/{{ page.fileSlug }}.html"
 </div>
 </section>
 
+{% include "breadcrumbs.njk" %}
 <article class="section">
 <div class="container" style="max-width:760px">
 
@@ -53,6 +54,20 @@ permalink: "knowledge/{{ page.fileSlug }}.html"
 <div class="article-cta"><div><span>NEED A SECOND ENGINEERING VIEW?</span><h2>Turn the lesson into a validation plan.</h2><p>Bring us the requirement, failure signature or architecture boundary. We will help frame the evidence needed to make the next decision.</p></div><a href="/contact.html" class="btn btn-primary">Discuss Your Challenge</a></div>
 </div>
 
+{% set linkedSolutions = collections.solutionPages | relatedSolutions(topic) %}
+{% if linkedSolutions.length %}
+<section class="solution-brief-block" aria-label="Related services">
+<h2>Engineering Services For This Topic</h2>
+<ul>{% for solution in linkedSolutions %}<li><a href="{{ solution.url }}">{{ solution.data.title | forceescape }}</a></li>{% endfor %}</ul>
+</section>
+{% endif %}
+{% set related = collections.knowledgeArticles | relatedArticles(page.url, topic, series, tags) %}
+{% if related.length %}
+<section class="solution-brief-block" aria-label="Related articles">
+<h2>Continue Reading</h2>
+<ul>{% for article in related %}<li><a href="{{ article.url }}">{{ article.data.title | forceescape }}</a></li>{% endfor %}</ul>
+</section>
+{% endif %}
 <div style="margin-top:48px">
 <a href="/knowledge.html" class="btn btn-outline">&larr; Back To Knowledge</a>
 </div>
