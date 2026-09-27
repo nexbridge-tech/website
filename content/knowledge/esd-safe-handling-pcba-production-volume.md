@@ -2,6 +2,7 @@
 layout: article.njk
 title: "ESD-Safe Handling in PCBA Production: Where the Process Actually Breaks Down at Volume"
 date: 2026-08-02
+updated: 2026-09-27
 tags: ["Semiconductor", "Manufacturing", "Lessons Learned"]
 topic: "Semiconductor & Manufacturing"
 excerpt: "An ESD-safe process that passes its qualification audit can still let latent device damage into the field, because the audit samples a handful of workstations on a quiet day — not the specific handoff points where an ESD-safe process actually degrades once a line is running at full volume and full staffing."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/esd-safe-handling-pcba-production-volume.svg"
 draft: false
 ---
 
-An ESD-safe production process can pass its qualification audit — grounded workstations, wrist straps in place, ESD flooring measured within spec — and still let latent device damage through to the field, because the audit checks the process as designed, on a quiet day, with a handful of workstations under direct observation. The failure mode that actually matters is different: it's what happens at the specific handoff points a process audit rarely captures, once a line is running at full volume, full staffing, and normal productioon-volume.svg)
+An ESD-safe production process can pass its qualification audit — grounded workstations, wrist straps in place, ESD flooring measured within spec — and still let latent device damage through to the field, because the audit checks the process as designed, on a quiet day, with a handful of workstations under direct observation. The failure mode that actually matters is different: it's what happens at the specific handoff points a process audit rarely captures, once a line is running at full volume, full staffing, and normal production pressure.
 
 ## Latent damage doesn't fail at incoming inspection
 

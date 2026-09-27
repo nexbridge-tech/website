@@ -576,5 +576,5 @@ collections:
               - { label: "Office Label", name: "office_label", widget: "string" }
               - { label: "Office Text", name: "office_text", widget: "string" }
               - { label: "Email", name: "email", widget: "string" }
-              - { label: "LinkedIn Label", name: "linkedin_label", widget: "string" }
-              - { label: "LinkedIn URL", name: "linkedin_url", widget: "string" }
+              - { label: "U.S. Contact Label", name: "us_contact_label", widget: "string" }
+              - { label: "U.S. Contact Location", name: "us_contact_location", widget: "string" }

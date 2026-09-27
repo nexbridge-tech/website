@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Single Points of Failure Hiding in 'Redundant' Systems"
 date: 2026-07-20
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Energy Storage", "Lessons Learned"]
 topic: "Engineering Consulting & Process"
 excerpt: "Redundancy is only as good as the independence between the redundant paths. A surprising number of systems labeled redundant share a power supply, a connector, a microcontroller domain, or a piece of firmware that quietly makes them one thing wearing two labels."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/single-points-of-failure-hiding-in-redundant-sys
 draft: false
 ---
 
-Redundancy is one of the most trusted words in a safety architecture, and one of the most frequently mis-applied. A system with two sensors, two communication paths, or two control channels gets labeled redundant, satisfies a functional safety requirement on paper, and still fails as a single unit in the field — because the redundancy that mattered on the architecture diagram wasn't actually present in the p-in-redundant-systems.svg)
+Redundancy is one of the most trusted words in a safety architecture, and one of the most frequently mis-applied. A system with two sensors, two communication paths, or two control channels gets labeled redundant, satisfies a functional safety requirement on paper, and still fails as a single unit in the field — because the redundancy that mattered on the architecture diagram wasn't actually present in the physical implementation.
 
 ## Redundancy is a claim about independence, not duplication
 

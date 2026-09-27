@@ -2,6 +2,7 @@
 layout: article.njk
 title: "The IIoT Data Layer That Was Never Designed, Only Added"
 date: 2026-08-01
+updated: 2026-09-27
 tags: ["Industrial Automation", "Industrial Networking", "Lessons Learned"]
 topic: "Industrial Networking & Automation"
 excerpt: "Most IIoT and MES connectivity on a production line wasn't designed — it was added, after the control logic was already finished, as a set of tags exposed because someone asked for data late in the program. The gap between those two approaches is where a surprising share of automation integration pain actually comes from."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/iiot-data-layer-nobody-designed.svg"
 draft: false
 ---
 
-Ask most automation teams when the IIoT and MES data layer got designed, and the honest answer is usually that it didn't — it got added, after the PLC program architecture was already finished, as a set of tags someone exposed because a data or analytics request came in late in the program. That ordering, not any specific technical mistake, is the root cause of most of the IIoT integration pain that shows up later: a data layer that was never a first-class design input ends up structurally constrained by decisions that were made without it ingned.svg)
+Ask most automation teams when the IIoT and MES data layer got designed, and the honest answer is usually that it didn't — it got added, after the PLC program architecture was already finished, as a set of tags someone exposed because a data or analytics request came in late in the program. That ordering, not any specific technical mistake, is the root cause of most of the IIoT integration pain that shows up later: a data layer that was never a first-class design input ends up structurally constrained by decisions that were made without it in mind.
 
 ## Tags designed for control logic aren't designed for analytics
 

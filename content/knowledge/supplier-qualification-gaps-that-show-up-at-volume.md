@@ -2,6 +2,7 @@
 layout: article.njk
 title: "The Supplier Qualification Gaps That Only Show Up at Volume"
 date: 2026-07-14
+updated: 2026-09-27
 tags: ["Supply Chain", "Manufacturing", "Lessons Learned"]
 topic: "Semiconductor & Manufacturing"
 excerpt: "A supplier's qualification sample can be genuinely representative of their process capability and still fail to predict what happens once that process is running at ten times the volume, under commercial pricing pressure, twelve months later."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/supplier-qualification-gaps-that-show-up-at-volu
 draft: false
 ---
 
-Supplier qualification for a new power electronics or battery component typically involves a defined sample size, a defined set of tests, and a pass/fail decision that then governs a multi-year sourcing relationship. The qualification sample is usually built with real care — the supplier wants to pass, the buying company wants confidence in the decision, and the process that produces the qualification sample often gets more attention than the process will receive once it's running at full commercial volume. That gap, between qualification conditions and steady-state production conditions, is where a specific and recurring category of fielt-show-up-at-volume.svg)
+Supplier qualification for a new power electronics or battery component typically involves a defined sample size, a defined set of tests, and a pass/fail decision that then governs a multi-year sourcing relationship. The qualification sample is usually built with real care — the supplier wants to pass, the buying company wants confidence in the decision, and the process that produces the qualification sample often gets more attention than the process will receive once it's running at full commercial volume. That gap, between qualification conditions and steady-state production conditions, is where a specific and recurring category of field failure originates.
 
 ## Qualification samples are a snapshot, production is a trend
 

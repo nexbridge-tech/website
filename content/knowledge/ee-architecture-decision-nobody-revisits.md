@@ -2,6 +2,7 @@
 layout: article.njk
 title: "The E/E Architecture Decision Nobody Revisits"
 date: 2026-06-18
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Engineering Journal", "Lessons Learned"]
 topic: "Automotive & EV Power Electronics"
 excerpt: "Domain vs. zonal, centralized vs. distributed, the wiring topology chosen in the first program review — these decisions get made early, get treated as settled, and quietly constrain every design decision that follows for years."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/ee-architecture-decision-nobody-revisits.svg"
 draft: false
 ---
 
-Every EV program has a moment, usually early and usually rushed, where the E/E architecture gets decided: domain-based or zonal, how many gateway ECUs, where the high-voltage and low-voltage domains physically split, how the wiring harness topology routes power and data across the vehicle. That decision gets made with the information available at the time — which is always less than what's available two years later — and then it becomes load-bearing. Every subsystem team designs against it. By the time anyone has enough evidence to know the decision was suboptimal, changing it means touching everything downstreavisits.svg)
+Every EV program has a moment, usually early and usually rushed, where the E/E architecture gets decided: domain-based or zonal, how many gateway ECUs, where the high-voltage and low-voltage domains physically split, how the wiring harness topology routes power and data across the vehicle. That decision gets made with the information available at the time — which is always less than what's available two years later — and then it becomes load-bearing. Every subsystem team designs against it. By the time anyone has enough evidence to know the decision was suboptimal, changing it means touching everything downstream of it.
 
 ## Why the decision is hard to revisit even when it should be
 

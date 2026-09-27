@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Field Return Root Cause: How Many 'No Fault Found' Cases Are Actually Design Issues in Disguise"
 date: 2026-07-31
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Energy Storage", "Manufacturing"]
 topic: "Engineering Consulting & Process"
 excerpt: "A returned unit that tests good on the bench gets labeled No Fault Found and closed. Across the electronics industry generally, a large share of NFF returns are not actually fault-free — they're intermittent, condition-dependent failures that the bench test simply isn't set up to reproduce."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/field-return-root-cause-no-fault-found.svg"
 draft: false
 ---
 
-A component or module returns from the field flagged for a specific symptom, gets tested against standard bench acceptance criteria, passes every test, and gets classified No Fault Found (NFF) — closed out, often with an implicit or explicit attribution to user error, installation issue, or an unreproducible anomaly. NFF is a real and legitimate classification for some fraction of returns. It's also, across the electronics industry broadly, a classification that swallows a meaningful share of genuine intermittent design or manufacturing issues, simply because the standard bench test isn't structured to reproduce the specific condition that triggered the field symptom in the firt-found.svg)
+A component or module returns from the field flagged for a specific symptom, gets tested against standard bench acceptance criteria, passes every test, and gets classified No Fault Found (NFF) — closed out, often with an implicit or explicit attribution to user error, installation issue, or an unreproducible anomaly. NFF is a real and legitimate classification for some fraction of returns. It's also, across the electronics industry broadly, a classification that swallows a meaningful share of genuine intermittent design or manufacturing issues, simply because the standard bench test isn't structured to reproduce the specific condition that triggered the field symptom in the first place.
 
 ## Why "passes the bench test" doesn't mean "no fault"
 

@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Charging Behavior in the Field vs. Charging Profiles in the Lab"
 date: 2026-07-17
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Energy Storage", "Technical Guides"]
 topic: "Automotive & EV Power Electronics"
 excerpt: "A charging profile validated in the lab assumes a starting condition and a completion behavior that real customers, in aggregate, don't actually follow. The distance between those two things quietly determines a meaningful share of real-world battery degradation."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/charging-behavior-field-vs-lab-profiles.svg"
 draft: false
 ---
 
-Battery charging profiles are developed and validated under controlled lab conditions: a defined starting state of charge, a defined starting temperature, a complete charge cycle run to a defined endpoint, repeated across a defined number of cycles to characterize degradation. This is the right way to characterize a charging algorithm's behavior in isolation, and it's also a meaningfully different usage pattern than what a real customer population actually produces — and that difference has real consequences for both battery longevity and thermal system design that don't show up until enough real-world field data accumfiles.svg)
+Battery charging profiles are developed and validated under controlled lab conditions: a defined starting state of charge, a defined starting temperature, a complete charge cycle run to a defined endpoint, repeated across a defined number of cycles to characterize degradation. This is the right way to characterize a charging algorithm's behavior in isolation, and it's also a meaningfully different usage pattern than what a real customer population actually produces — and that difference has real consequences for both battery longevity and thermal system design that don't show up until enough real-world field data accumulates.
 
 ## The starting conditions rarely match
 

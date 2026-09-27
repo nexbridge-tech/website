@@ -2,7 +2,7 @@
 layout: base.njk
 permalink: "index.html"
 title: "NexBridge Solutions | Engineering, Prototyping & Factory Digitalization"
-description: "NexBridge helps teams design systems, build prototypes, source PCBA and components, and deploy ERP/MES solutions while protecting project lead time."
+description: "NexBridge connects engineering, CNC machining, custom jigs and fixtures, PCBA manufacturing and component supply in Vietnam with factory digitalization."
 ---
 <script type="application/ld+json">
 {
@@ -18,8 +18,7 @@ description: "NexBridge helps teams design systems, build prototypes, source PCB
     "addressLocality": "Hanoi",
     "postalCode": "10000",
     "addressCountry": "VN"
-  },
-  "sameAs": ["https://www.linkedin.com/company/nexbridge-technologies-solution"]
+  }
 }
 </script>
 
@@ -36,7 +35,7 @@ description: "NexBridge helps teams design systems, build prototypes, source PCB
 <div class="hero-banner-inner">
 <span class="hero-eyebrow">ENGINEERING · SUPPLY · DIGITALIZATION</span>
 <h1>Turn Engineering Requirements <span class="accent-line">Into Delivered Results</span></h1>
-<p class="lead">Design systems, build prototypes, secure critical components and deploy factory solutions—with one partner focused on technical closure, lead time and progress.</p>
+<p class="lead">Design systems, build prototypes, secure critical components and deploy factory solutions—with one team focused on technical closure, lead time and progress.</p>
 <div class="hero-cta">
 <a href="/solutions.html" class="btn btn-light">Explore Solutions</a>
 <a href="#start-here" class="btn btn-outline-light">Start With Your Challenge</a>
@@ -68,6 +67,8 @@ description: "NexBridge helps teams design systems, build prototypes, source PCB
 </div>
 </div>
 </section>
+
+{% include "manufacturing-teaser.njk" %}
 
 <section class="home-domains section">
 <div class="container">
@@ -135,24 +136,6 @@ description: "NexBridge helps teams design systems, build prototypes, source PCB
 <div><b>02</b><h3>Run workstreams in parallel</h3><p>Coordinate design, sourcing and implementation without waiting for serial handoffs.</p></div>
 <div><b>03</b><h3>Validate earlier</h3><p>Use reviews and prototypes to expose risk before release or deployment.</p></div>
 <div><b>04</b><h3>Track closure, not activity</h3><p>Report decisions, evidence and blockers against the delivery milestone.</p></div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="home-partners section">
-<div class="container">
-<div class="home-partner-layout">
-<div class="home-partner-copy">
-<span>DELIVERY NETWORK</span>
-<h2>Partners Extend What We Can Deliver</h2>
-<p>NexBridge combines engineering ownership with a growing network of manufacturers and technology suppliers. We select partners against the application, quality requirements and delivery plan—not simply a catalog.</p>
-<a href="/partners.html">View the partner network &rarr;</a>
-</div>
-<div class="home-partner-wall">
-{% for partner in partners.brands.items %}
-<a href="{{ partner.link }}" target="_blank" rel="noopener"><img src="/{{ partner.image }}" alt="{{ partner.name }}" loading="lazy"><span>{{ partner.name }}</span></a>
-{% endfor %}
 </div>
 </div>
 </div>

@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Register Maps, Timing Assumptions, and the Bugs That Live Between Two Teams' Definition of 'Ready'"
 date: 2026-07-02
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Energy Storage", "Technical Guides"]
 topic: "Automotive & EV Power Electronics"
 excerpt: "Hardware's definition of 'the peripheral is ready' and software's definition of 'the peripheral is ready' are two different claims about the world. When they don't match, the resulting bug is almost impossible to find by reading either team's code in isolation."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/register-maps-timing-assumptions-interface-bugs.
 draft: false
 ---
 
-A specific category of integration bug shows up again and again across power electronics programs, and it has a specific shape: hardware and software each behave exactly as their own designer intended, and the combination still fails, because the two designers were reasoning about slightly different definitions of the same event. "The ADC conversion is complete." "The gate driver fault has cleared." "The communication peripheral is ready to transmit." Each of these sounds like an unambiguous hardware state — and each one is, in practice, defined by a specific register bit, a specific timing window, and a specific set of preconditions that hardware and software can silently nterface-bugs.svg)
+A specific category of integration bug shows up again and again across power electronics programs, and it has a specific shape: hardware and software each behave exactly as their own designer intended, and the combination still fails, because the two designers were reasoning about slightly different definitions of the same event. "The ADC conversion is complete." "The gate driver fault has cleared." "The communication peripheral is ready to transmit." Each of these sounds like an unambiguous hardware state — and each one is, in practice, defined by a specific register bit, a specific timing window, and a specific set of preconditions that hardware and software can silently disagree about.
 
 ## The gap between "the datasheet says" and "the actual silicon does"
 

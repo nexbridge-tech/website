@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Firmware Updates That Break Hardware Assumptions Nobody Wrote Down"
 date: 2026-07-06
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Energy Storage", "Lessons Learned"]
 topic: "Automotive & EV Power Electronics"
 excerpt: "An over-the-air update can change control behavior without touching a single hardware component — and still push a power stage outside the thermal or electrical envelope the hardware was actually designed for, because the original margin assumed a control algorithm that no longer exists."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/firmware-updates-that-break-hardware-assumptions
 draft: false
 ---
 
-Hardware design margin is almost always calculated against an assumed control behavior — a specific switching frequency, a specific current ripple profile, a specific duty cycle pattern under specific operating conditions. That assumed behavior lives in the control firmware, and the moment firmware becomes field-updatable, the hardware's design margin is no longer protected by anything except the discipline of the team writing future firmware updates to stay inside constraints they may never have re-assumptions.svg)
+Hardware design margin is almost always calculated against an assumed control behavior — a specific switching frequency, a specific current ripple profile, a specific duty cycle pattern under specific operating conditions. That assumed behavior lives in the control firmware, and the moment firmware becomes field-updatable, the hardware's design margin is no longer protected by anything except the discipline of the team writing future firmware updates to stay inside constraints they may never have seen documented.
 
 ## The margin was calculated against a control strategy, not a component rating
 

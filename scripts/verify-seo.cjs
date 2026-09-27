@@ -21,6 +21,9 @@ const hostileTitle = '</script><script>alert("x")</script>';
 const serialized = seo.jsonLd(seo.schema("/knowledge/test.html", hostileTitle, 'A "quoted" description', new Date("2026-08-01")));
 assert(!serialized.includes("</script>"));
 assert.equal(JSON.parse(serialized)["@graph"][1].headline, hostileTitle);
+const revised = seo.schema('/knowledge/revised.html', 'Revised article', 'Description', '2026-08-01', null, '2026-09-27')['@graph'][1];
+assert.equal(revised.datePublished, '2026-08-01T00:00:00.000Z');
+assert.equal(revised.dateModified, '2026-09-27T00:00:00.000Z');
 
 const output = path.resolve(__dirname, "../_site");
 const read = url => fs.readFileSync(path.join(output, url === "/" ? "index.html" : url), "utf8");
@@ -51,7 +54,11 @@ for (const url of urls) {
     assert(schemas.some(s => s["@graph"]?.some(g => g["@type"] === "BreadcrumbList")), `${route}: missing breadcrumb schema`);
     assert(html.includes('aria-label="Breadcrumb"'), `${route}: missing visible breadcrumbs`);
   }
-  if (route.startsWith("/knowledge/")) assert(schemas.some(s => s["@graph"]?.some(g => g["@type"] === "Article")), `${route}: missing article schema`);
+  if (route.startsWith("/knowledge/")) {
+    assert(schemas.some(s => s["@graph"]?.some(g => g["@type"] === "Article")), `${route}: missing article schema`);
+    const bodyText = (html.match(/<div class="article-body">([\s\S]*?)<\/div>/)?.[1] || "").replace(/<[^>]*>/g, " ");
+    assert(!/(?:\.svg|\.vg)\)/.test(bodyText), `${route}: corrupted image filename in article text`);
+  }
 }
 
 // Ensure a crawler starting at Home can reach every sitemap page using HTML links.

@@ -2,6 +2,7 @@
 layout: article.njk
 title: "When 'Reuse' Becomes the Riskiest Word in a BOM"
 date: 2026-06-22
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Supply Chain", "Lessons Learned"]
 topic: "Engineering Consulting & Process"
 excerpt: "Carrying a qualified component forward from a previous program feels like risk reduction. It's only risk reduction if the new application's actual operating conditions were checked against the original qualification — and that check gets skipped more often than it should."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/when-reuse-becomes-the-riskiest-word-in-a-bom.sv
 draft: false
 ---
 
-"It's already qualified, just carry it forward" is one of the most reasonable-sounding sentences in program management, and one of the more common sources of field failures that nobody predicted. Component reuse across programs is genuinely valuable — it reduces qualification cost, leverages supplier relationships, and avoids re-litigating decisions that already worked. The risk isn't in reuse itself. It's in the gap between "this component was qualified" and "this component was qualified for the conditions it's now be-word-in-a-bom.svg)
+"It's already qualified, just carry it forward" is one of the most reasonable-sounding sentences in program management, and one of the more common sources of field failures that nobody predicted. Component reuse across programs is genuinely valuable — it reduces qualification cost, leverages supplier relationships, and avoids re-litigating decisions that already worked. The risk isn't in reuse itself. It's in the gap between "this component was qualified" and "this component was qualified for the conditions it's now being used under."
 
 ## Qualification is scoped, not universal
 

@@ -2,6 +2,7 @@
 layout: article.njk
 title: "When the Driver Is Part of the Control Loop: Human Behavior as a Design Input"
 date: 2026-07-21
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Engineering Journal", "Lessons Learned"]
 topic: "Automotive & EV Power Electronics"
 excerpt: "A traction and thermal control system is validated against a drive cycle. A drive cycle is a model of human behavior. When real driving behavior diverges from that model — and it always does, in specific and knowable ways — the system is operating outside the envelope it was actually validated against."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/driver-as-part-of-the-control-loop-human-factors
 draft: false
 ---
 
-Every EV powertrain control strategy — thermal management, battery derating, torque delivery — is validated against a set of standardized or internally-defined drive cycles, which are, at their core, a mathematical model of how people drive. That model is necessary and useful, and it is also, unavoidably, a simplification. Real driver behavior diverges from standardized drive cycles in specific, well-documented, and knowable ways, and a control system validated only against the model — not against the range of real behavior the model was simplifying — is operating outside its actual validation envelope the moment a real driver's behavior diverges enough from the -human-factors.svg)
+Every EV powertrain control strategy — thermal management, battery derating, torque delivery — is validated against a set of standardized or internally-defined drive cycles, which are, at their core, a mathematical model of how people drive. That model is necessary and useful, and it is also, unavoidably, a simplification. Real driver behavior diverges from standardized drive cycles in specific, well-documented, and knowable ways, and a control system validated only against the model — not against the range of real behavior the model was simplifying — is operating outside its actual validation envelope the moment a real driver's behavior diverges enough from the assumed pattern.
 
 ## The gap between a drive cycle and a driver
 

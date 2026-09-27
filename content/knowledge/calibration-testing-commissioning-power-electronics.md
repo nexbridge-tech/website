@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Calibration, Integration and Commissioning: The Phase Where Good Designs Still Fail"
 date: 2026-08-01
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Energy Storage", "Lessons Learned"]
 topic: "Automotive & EV Power Electronics"
 excerpt: "A power electronics design can pass every simulation and still fail at commissioning. Sensor calibration drift, ground loops, CAN bus timing, and fault-injection gaps are where correct designs meet real hardware — and where most late-stage delays actually come from."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/calibration-testing-commissioning-power-electron
 draft: false
 ---
 
-By the time a power electronics program reaches calibration and commissioning, the design has usually already passed simulation, passed design review, and passed initial bench validation. This is exactly why the failures that show up at this stage are the most expensive ones — they aren't design errors in the traditional sense, they're the gap between a model of the system and the actual physical hardware, wiring, and environment it has to operate in. This is a field-level look at where that gap tends to open up, across both EV powertrain electronics and power-electronics.svg)
+By the time a power electronics program reaches calibration and commissioning, the design has usually already passed simulation, passed design review, and passed initial bench validation. This is exactly why the failures that show up at this stage are the most expensive ones — they aren't design errors in the traditional sense, they're the gap between a model of the system and the actual physical hardware, wiring, and environment it has to operate in. This is a field-level look at where that gap tends to open up, across both EV powertrain electronics and grid-scale storage.
 
 ## Current sensor calibration: the drift nobody budgets for
 

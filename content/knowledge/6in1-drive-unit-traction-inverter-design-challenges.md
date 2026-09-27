@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Designing a 6-in-1 EV Power Electronics Unit: Where Integration Fights Back"
 date: 2026-08-01
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Technical Guides", "Engineering Journal"]
 topic: "Automotive & EV Power Electronics"
 excerpt: "Combining the traction inverter, on-board charger, DC-DC converter and PDU into a single 6-in-1 housing saves cost and space — and creates thermal, EMI and functional-safety problems that don't exist when those subsystems are separate boxes."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/6in1-drive-unit-traction-inverter-design-challen
 draft: false
 ---
 
-The commercial logic behind a 6-in-1 power electronics unit is straightforward: combine the traction inverter, on-board charger (OBC), DC-DC converter, and power distribution unit (PDU) — sometimes with additional functions like a secondary inverter for a rear motor — into a single housing, and you cut connector count, wiring harness mass, enclosure cost, and assembly time. The engineering logic is a lot less straightforward, because every one of those subsystems was originally designed to be its own thermally and electrically isolated box, and integration forces problems that simply don't exist whedesign-challenges.svg)
+The commercial logic behind a 6-in-1 power electronics unit is straightforward: combine the traction inverter, on-board charger (OBC), DC-DC converter, and power distribution unit (PDU) — sometimes with additional functions like a secondary inverter for a rear motor — into a single housing, and you cut connector count, wiring harness mass, enclosure cost, and assembly time. The engineering logic is a lot less straightforward, because every one of those subsystems was originally designed to be its own thermally and electrically isolated box, and integration forces problems that simply don't exist when they're separate.
 
 ## Thermal co-design: shared cold plate, different heat profiles
 

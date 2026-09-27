@@ -1,5 +1,5 @@
 seo_title: NexBridge Solutions | Connecting Global Technology With Industrial Excellence
-seo_description: NexBridge connects global technology partners with OEMs through
+seo_description: NexBridge connects global technology suppliers with OEMs through
   engineering expertise, industrial sourcing, and end-to-end product development
   solutions.
 hero:
@@ -80,15 +80,9 @@ explore:
         customers.
       link_text: Our Story →
       link: about.html
-    - icon: network
-      title: Partners
-      description: The global suppliers we bridge you to, from semiconductors to
-        thermal materials.
-      link_text: Meet Our Partners →
-      link: partners.html
     - icon: mail
       title: Contact
-      description: New inquiry, partnership or technical support — tell us what you need.
+      description: New inquiry or technical support — tell us what you need.
       link_text: Get In Touch →
       link: contact.html
 feature_bar:

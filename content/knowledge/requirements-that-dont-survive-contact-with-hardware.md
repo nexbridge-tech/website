@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Requirements That Don't Survive Contact With Hardware"
 date: 2026-06-15
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Energy Storage", "Lessons Learned"]
 topic: "Engineering Consulting & Process"
 excerpt: "A requirements document is a hypothesis about the system, written before the system exists. The gap between that hypothesis and the as-built hardware is where a surprising number of program delays actually originate."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/requirements-that-dont-survive-contact-with-hard
 draft: false
 ---
 
-Every program starts with a requirements document that looks complete: voltage ranges, current limits, thermal envelopes, timing budgets, interface definitions. It's reviewed, signed off, and treated afterward as ground truth. The problem is that a requirements document is a hypothesis about a system that doesn't exist yet, written by people who are reasoning from prior programs, supplier datasheets, and assumptions about how subsystems will interact. As soon as real hardware shows up, some fraction of that hypothesis turns out to be wrong — and the gap between the written requirement and the as-built reality is where a surprising share of progracontact-with-hardware.svg)
+Every program starts with a requirements document that looks complete: voltage ranges, current limits, thermal envelopes, timing budgets, interface definitions. It's reviewed, signed off, and treated afterward as ground truth. The problem is that a requirements document is a hypothesis about a system that doesn't exist yet, written by people who are reasoning from prior programs, supplier datasheets, and assumptions about how subsystems will interact. As soon as real hardware shows up, some fraction of that hypothesis turns out to be wrong — and the gap between the written requirement and the as-built reality is where a surprising share of program delay actually lives.
 
 ## The requirement that was true in isolation
 

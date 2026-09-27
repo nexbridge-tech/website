@@ -1,22 +1,22 @@
 seo_title: "About | NexBridge Solutions"
-seo_description: "NexBridge connects global partners with PCB design, component layout and PCBA manufacturing support in Vietnam, alongside engineering and technology sourcing."
+seo_description: "NexBridge connects global customers with PCB design, component layout and PCBA manufacturing support in Vietnam, alongside engineering and technology sourcing."
 
 page_header:
   eyebrow: "About"
   title: "Built On Real Industry Experience"
-  subtitle: "Connecting Vietnamese industry with global technology, and international partners with engineering and electronics manufacturing in Vietnam."
+  subtitle: "Connecting Vietnamese industry with global technology, and international product teams with engineering and electronics manufacturing in Vietnam."
 
 overview:
   small_title: "DESCRIPTION"
   title: "Who We Are"
   paragraphs:
-    - "For international OEMs, product teams and electronics companies, NexBridge supports PCB schematic design, component placement and routing, and PCBA manufacturing coordination in Vietnam. We connect design requirements with local build partners, from prototype preparation to production handover."
-    - "NexBridge connects Vietnamese manufacturers, OEMs and system integrators with global technology partners in semiconductors, energy storage, renewable energy and industrial solutions. We start with the application and its real constraints, not a product catalogue."
+    - "For international OEMs, product teams and electronics companies, NexBridge supports PCB schematic design, component placement and routing, and PCBA manufacturing coordination in Vietnam. We connect design requirements with local manufacturers, from prototype preparation to production handover."
+    - "NexBridge connects Vietnamese manufacturers, OEMs and system integrators with global technology suppliers in semiconductors, energy storage, renewable energy and industrial solutions. We start with the application and its real constraints, not a product catalogue."
     - "Our approach is built on practical experience in Vietnam's automotive, EV, electronics and industrial sectors — so we understand both the engineering requirements and the realities of getting a project built."
   mission_cards:
     - icon: target
       title: "Our Mission"
-      description: "Help Vietnamese companies access global technologies and help international partners turn electronic designs into buildable products in Vietnam."
+      description: "Help Vietnamese companies access global technologies and help international product teams turn electronic designs into buildable products in Vietnam."
     - icon: eye
       title: "Our Vision"
       description: "Become the trusted connection between global technology companies and Vietnamese industry."
@@ -27,7 +27,7 @@ focus_areas:
   image: "/assets/images/diagrams/about-focus-areas.svg"
   cards:
     - title: "PCB Design & PCBA Manufacturing in Vietnam"
-      description: "Schematic design, component placement, PCB routing, component sourcing and local assembly coordination for international partners."
+      description: "Schematic design, component placement, PCB routing, component sourcing and local assembly coordination for international product teams."
     - title: "Semiconductors & Electronic Components"
       description: "For automotive, industrial electronics, embedded systems and power electronics."
     - title: "Energy Storage & Renewable Energy"
@@ -45,7 +45,7 @@ how_we_work:
     - title: "Listen"
       description: "Understand the application, the real problem and the technical constraints."
     - title: "Evaluate"
-      description: "Review requirements and identify suitable technologies and partners."
+      description: "Review requirements and identify suitable technologies and suppliers."
     - title: "Connect"
       description: "Bring together the right customer, technology and people."
     - title: "Support"
@@ -60,12 +60,12 @@ why_nexbridge:
     - title: "Engineering Before Sales"
       description: "We understand the problem first, and only recommend what is technically suitable and commercially realistic."
     - title: "Local Understanding, Global Reach"
-      description: "We help global partners work with Vietnamese engineering and manufacturing teams, and help Vietnamese customers access international technology."
+      description: "We help global customers work with Vietnamese engineering and manufacturing teams, and help Vietnamese customers access international technology."
     - title: "Built For The Long Term"
       description: "We aim for relationships that create lasting value, not one-time transactions."
 
 closing:
   title: "Connecting Technology With Opportunity"
   paragraphs:
-    - "For Vietnamese companies, NexBridge provides access to technologies, suppliers and expertise that may otherwise be hard to identify or evaluate. For global technology partners, we provide local market understanding and practical support in Vietnam."
-    - "NexBridge stands between the two sides — not simply as an intermediary, but as a partner that understands the technology, the market and the work required to bring them together."
+    - "For Vietnamese companies, NexBridge provides access to technologies, suppliers and expertise that may otherwise be hard to identify or evaluate. For global technology suppliers, we provide local market understanding and practical support in Vietnam."
+    - "NexBridge stands between the two sides — not simply as an intermediary, but as an engineering team that understands the technology, the market and the work required to bring them together."

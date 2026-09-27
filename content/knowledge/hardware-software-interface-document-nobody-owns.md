@@ -2,6 +2,7 @@
 layout: article.njk
 title: "The Hardware-Software Interface Document Nobody Owns"
 date: 2026-06-29
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Technical Guides", "Engineering Journal"]
 topic: "Engineering Consulting & Process"
 excerpt: "The HSI document sits between two teams, referenced by both, authored by neither with real authority. That ownership gap is where register mismatches, timing assumption conflicts, and 'it worked in my test environment' bugs actually come from."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/hardware-software-interface-document-nobody-owns
 draft: false
 ---
 
-The Hardware-Software Interface (HSI) document exists specifically to prevent the hardware team and the software team from making incompatible assumptions about how the two sides of the system talk to each other — register maps, timing constraints, signal polarity, initialization sequences, fault reporting formats. In practice, it's one of the most consistently under-owned documents on a program. It's not really a hardware deliverable, because most of its content describes software-visible behavior. It's not really a software deliverable, because it describes hardware constraints the software has to respect. Both teams reference it. Neither team has clear, sole authority to keep it current, and that gap is where a specific, very common category of integratument-nobody-owns.svg)
+The Hardware-Software Interface (HSI) document exists specifically to prevent the hardware team and the software team from making incompatible assumptions about how the two sides of the system talk to each other — register maps, timing constraints, signal polarity, initialization sequences, fault reporting formats. In practice, it's one of the most consistently under-owned documents on a program. It's not really a hardware deliverable, because most of its content describes software-visible behavior. It's not really a software deliverable, because it describes hardware constraints the software has to respect. Both teams reference it. Neither team has clear, sole authority to keep it current, and that gap is where a specific, very common category of integration bug comes from.
 
 ## The bug that isn't really a bug
 

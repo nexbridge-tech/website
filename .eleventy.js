@@ -23,6 +23,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("MEMBER_LIBRARY_SETUP.md");
   eleventyConfig.ignores.add("README.md");
   eleventyConfig.ignores.add("node_modules/**");
+  eleventyConfig.ignores.add("tmp/**");
+  // Partner showcase is temporarily unpublished; keep its source for later.
+  eleventyConfig.ignores.add("partners.njk");
 
   // Knowledge articles collection, newest first (drafts excluded)
   eleventyConfig.addCollection("knowledgeArticles", function (collectionApi) {

@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Operator Error or Design Error? Rethinking 'User Error' in BESS Dispatch Incidents"
 date: 2026-07-24
+updated: 2026-09-27
 tags: ["Energy Storage", "Lessons Learned", "Engineering Journal"]
 topic: "Energy Storage Systems"
 excerpt: "An operator issuing a dispatch command the system shouldn't have accepted is usually filed as human error. Very often, the more accurate description is that the interface allowed a command the underlying system state should have rejected — and that's a design finding wearing an operator's name."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/operator-error-or-design-error-bess-dispatch.svg
 draft: false
 ---
 
-When a grid-scale storage incident traces back to an operator issuing a dispatch command that produced an undesired outcome — an over-discharge event, a command issued during a state the system wasn't actually ready for, a manual override that conflicted with an automated safety interlock — the immediate, easy classification is operator error. Sometimes that classification is accurate. Very often, on closer examination, the more useful finding is that the human-machine interface allowed a command the underlying system state should have made impossible to issue, or at minimum should have required deliberate, confirmed override to accept — and that's a design finding, even though it's initially filed-error-bess-dispatch.svg)
+When a grid-scale storage incident traces back to an operator issuing a dispatch command that produced an undesired outcome — an over-discharge event, a command issued during a state the system wasn't actually ready for, a manual override that conflicted with an automated safety interlock — the immediate, easy classification is operator error. Sometimes that classification is accurate. Very often, on closer examination, the more useful finding is that the human-machine interface allowed a command the underlying system state should have made impossible to issue, or at minimum should have required deliberate, confirmed override to accept — and that's a design finding, even though it's initially filed under a human's name.
 
 ## Why "operator error" is often the wrong frame
 

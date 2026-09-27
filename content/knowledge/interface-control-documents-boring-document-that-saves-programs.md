@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Interface Control Documents: Why the Boring Document Is the One That Saves the Program"
 date: 2026-07-09
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Energy Storage", "Supply Chain"]
 topic: "Engineering Consulting & Process"
 excerpt: "No supplier ever misses a schedule milestone because their interface control document was too detailed. Almost every multi-vendor integration delay traces back to one that wasn't."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/interface-control-documents-boring-document-that
 draft: false
 ---
 
-An interface control document (ICD) is, by design, one of the least exciting deliverables on a program — it's a specification of connectors, signal definitions, communication protocols, timing, and electrical characteristics at the boundary between two subsystems, usually from two different suppliers or two different internal teams. Nobody gets excited reviewing an ICD. Everybody eventually wishes it had been reviewed more carefully, because the single most predictable source of schedule slip on any multi-vendor integration — a BESS with separate BMS, PCS and EMS suppliers, a 6-in-1 drive unit with subsystems from different design teams — is an ICD that was agreed to on paper before it was detailed enouing-document-that-saves-programs.svg)
+An interface control document (ICD) is, by design, one of the least exciting deliverables on a program — it's a specification of connectors, signal definitions, communication protocols, timing, and electrical characteristics at the boundary between two subsystems, usually from two different suppliers or two different internal teams. Nobody gets excited reviewing an ICD. Everybody eventually wishes it had been reviewed more carefully, because the single most predictable source of schedule slip on any multi-vendor integration — a BESS with separate BMS, PCS and EMS suppliers, a 6-in-1 drive unit with subsystems from different design teams — is an ICD that was agreed to on paper before it was detailed enough to actually prevent a mismatch.
 
 ## Where a thin ICD actually costs time
 

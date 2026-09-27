@@ -1,0 +1,18 @@
+{
+  "tool": "Built-in image_gen",
+  "note": "Concept renders, not photographs of delivered customer projects.",
+  "prompts": [
+    {
+      "key": "manufacturing-hero",
+      "prompt": "Use case: product-mockup. Asset type: premium international B2B engineering website hero, wide landscape 1536x1024. Create an exceptionally photorealistic high-end industrial product CGI still life: a precision CNC milled silver aluminum electronics enclosure with its separate lid beside it, a populated dark-green PCBA clearly seated inside the enclosure, and a compact mechanical assembly fixture with two blue toggle clamps on a machined tooling plate beside the enclosure. All parts are physically plausible with crisp chamfers, real machining marks, threaded holes, black socket screws, accurately detailed electronic components. Dark midnight navy seamless studio background, cool softbox lighting with restrained cyan rim light, elegant subtle floor reflection, three-quarter elevated camera, product ensemble centrally framed with generous breathing room. Premium engineering catalog, realistic materials, sophisticated quiet composition. No text, no logo, no watermarks, no people, no collage, no exploded floating objects."
+    },
+    {
+      "key": "cnc-machining",
+      "prompt": "Use case: product-mockup. Asset type: premium engineering service website image, wide landscape 1536x1024. Photorealistic luxury industrial CGI still life of three precision machined parts: a satin silver aluminum rectangular enclosure body with rounded internal pockets and threaded mounting holes, a turned stainless steel stepped shaft, and a small machined bracket with clean bores. Realistic subtle circular milling tool marks, crisp chamfers, precision metallic surfaces, physically plausible manufactured geometry. Midnight navy seamless studio, cool white softbox highlights and restrained blue rim light, subtle floor reflection. Close three-quarter elevated camera, subjects centered and fully visible with ample margins, highly detailed premium engineering catalog photograph look. No text, no logos, no watermarks, no people, no machine claims, no collage."
+    },
+    {
+      "key": "jigs-fixtures",
+      "prompt": "Use case: product-mockup. Asset type: premium B2B jig and fixture service website image, wide landscape 1536x1024. Exceptionally photorealistic industrial CGI of a compact custom assembly and inspection fixture on a rectangular machined aluminum tooling baseplate, evenly spaced counterbored mounting holes, two realistic blue-handled manual toggle clamps with rubber-tipped threaded clamp spindles securing a small silver machined workpiece into a black polymer contoured locating nest, steel locating pins and socket head screws. Mechanically coherent, usable fixture, detailed accurate metal and polymer textures. Midnight navy seamless studio background, premium softbox light, restrained cyan edge reflections, elegant shadow and subtle floor reflection. Three-quarter elevated product camera showing complete fixture with breathing room. Refined international manufacturing catalog. No text, no logos, no watermarks, no people, no collage."
+    }
+  ]
+}

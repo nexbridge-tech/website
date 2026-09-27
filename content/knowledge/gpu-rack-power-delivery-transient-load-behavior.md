@@ -2,6 +2,7 @@
 layout: article.njk
 title: "GPU Rack Power Delivery: Why Transient Load Behavior Breaks Nameplate Assumptions"
 date: 2026-08-03
+updated: 2026-09-27
 tags: ["AI Infrastructure", "Thermal Management", "Technical Guides"]
 topic: "AI Infrastructure"
 excerpt: "A GPU rack's nameplate power rating describes a steady-state average that the rack almost never actually draws. Training workloads pull power in sharp, correlated bursts across every card in the rack simultaneously — and that transient behavior, not the average, is what actually sizes the power delivery chain."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/gpu-rack-power-delivery-transient-load-behavior.
 draft: false
 ---
 
-A rack of GPUs rated at a given average power draw can still trip an upstream breaker, sag a bus voltage, or overload a PDU that was sized correctly for the nameplate number — because the nameplate number describes an average, and training workloads don't draw power as an average. They draw it in sharp, synchronized bursts, correlated across every card in the rack at once, as a training step transitions from compute-bound to memory-bound and back. Power delivery engineering for AI infrastructure has to be sized against that transient behavior, not the steady-state figure on the spec sheet — a lesson industrial power electronics learned from motor inrush current and traction-inverter switching transients well before "AI infrastructurnt-load-behavior.svg)
+A rack of GPUs rated at a given average power draw can still trip an upstream breaker, sag a bus voltage, or overload a PDU that was sized correctly for the nameplate number — because the nameplate number describes an average, and training workloads don't draw power as an average. They draw it in sharp, synchronized bursts, correlated across every card in the rack at once, as a training step transitions from compute-bound to memory-bound and back. Power delivery engineering for AI infrastructure has to be sized against that transient behavior, not the steady-state figure on the spec sheet — a lesson industrial power electronics learned from motor inrush current and traction-inverter switching transients well before "AI infrastructure" was a category.
 
 ## The nameplate number was never the design constraint
 

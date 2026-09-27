@@ -19,7 +19,7 @@ permalink: "knowledge/{{ page.fileSlug }}.html"
 <img class="card-photo" style="aspect-ratio:16/9" src="{{ image }}" alt="{{ title }}">
 {% endif %}
 
-<div class="article-meta-row"><span>{{ date | readableDate }}</span><span>{{ topic or "Engineering field note" }}</span>{% if series %}<span>{{ series }}</span>{% endif %}</div>
+<div class="article-meta-row"><span>Published {{ date | readableDate }}</span>{% if updated %}<span>Updated {{ updated | readableDate }}</span>{% endif %}<span>{{ topic or "Engineering field note" }}</span>{% if series %}<span>{{ series }}</span>{% endif %}</div>
 
 <div class="article-body">
 {{ content | safe }}

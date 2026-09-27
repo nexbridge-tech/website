@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Real-Time vs. Best-Effort: What \"Deterministic\" Actually Means on a Factory Network"
 date: 2026-08-02
+updated: 2026-09-27
 tags: ["Industrial Networking", "Industrial Automation", "Technical Guides"]
 topic: "Industrial Networking & Automation"
 excerpt: "\"Deterministic\" gets used as a marketing adjective for industrial networking equipment more often than it gets used as an engineering requirement with an actual bound. A safety interlock signal, a SCADA polling loop and a bulk data upload have very different tolerance for jitter — treating them as the same kind of \"network traffic\" is where real-time behavior quietly stops being real-time."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/real-time-vs-best-effort-deterministic-factory-n
 draft: false
 ---
 
-"Deterministic" is one of the most frequently claimed and least frequently specified properties in industrial networking equipment. It gets used as a general assurance — this network is reliable, this switch is industrial-grade — far more often than it gets used as an engineering requirement with an actual bound: a maximum latency, a maximum jitter, under a specific, stated traffic load. Without that bound, "deterministic" is a marketing adjective, not an engineering property, and a network architecture built on the marketing version of the word will pass commissioning and still misbehave once reaterministic-factory-networks.svg)
+"Deterministic" is one of the most frequently claimed and least frequently specified properties in industrial networking equipment. It gets used as a general assurance — this network is reliable, this switch is industrial-grade — far more often than it gets used as an engineering requirement with an actual bound: a maximum latency, a maximum jitter, under a specific, stated traffic load. Without that bound, "deterministic" is a marketing adjective, not an engineering property, and a network architecture built on the marketing version of the word will pass commissioning and still misbehave once real production traffic is on it.
 
 ## Not all industrial traffic has the same tolerance
 

@@ -1,0 +1,7 @@
+{
+  "services": [
+    {"number":"01", "title":"CNC & Precision Machining", "label":"MECHANICAL PARTS", "image":"cnc-machining", "alt":"Concept render of a machined aluminum enclosure, turned shaft and precision bracket", "description":"Custom machined parts, housings and mechanical components, coordinated from drawing review to inspection and delivery.", "scope":"CNC milling · Turning · Mechanical components", "url":"/solutions/cnc-precision-machining-vietnam.html"},
+    {"number":"02", "title":"Custom Jigs & Fixtures", "label":"PRODUCTION & TEST TOOLING", "image":"ev-motor-test-fixture", "alt":"Concept render of an automotive electric motor test fixture with a guarded dynamometer coupling", "description":"Purpose-built tooling for assembly, inspection and automotive electric motor test setups, designed around your operation.", "scope":"Assembly jigs · Inspection fixtures · Motor test tooling", "url":"/solutions/jigs-fixtures-vietnam.html"},
+    {"number":"03", "title":"PCB Design & PCBA", "label":"ELECTRONICS", "image":"manufacturing-hero", "alt":"Concept render of an assembled circuit board in a machined enclosure beside a fixture", "description":"Schematic and layout support, component sourcing and assembly coordination for prototypes and repeat electronics builds.", "scope":"PCB design · Component sourcing · Assembly", "url":"/solutions/pcb-design-pcba-vietnam.html"}
+  ]
+}

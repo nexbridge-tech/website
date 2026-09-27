@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Post-Mortem Culture: Why Some Engineering Teams Actually Get Better After a Failure (And Most Don't)"
 date: 2026-07-28
+updated: 2026-09-27
 tags: ["Engineering Journal", "Career Development", "Lessons Learned"]
 topic: "Career & Culture"
 excerpt: "Almost every engineering organization runs a post-mortem after a serious failure. Very few of them produce a process that's actually different six months later — and the difference between the two isn't effort, it's what the post-mortem is structurally allowed to conclude."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/post-mortem-culture-why-some-teams-get-better.sv
 draft: false
 ---
 
-Almost every engineering organization serious enough to build power electronics or energy storage systems at scale has a post-incident review process. Most of them produce a document, a list of action items, and, six months later, a process that is not meaningfully different from before the incident. The gap between organizations where this genuinely works and organizations where it doesn't isn't effort or intelligence — it's what the post-mortem process is structurally allowed to conclude, and whether the organization's incentives support acting on that conclusion once it'ams-get-better.svg)
+Almost every engineering organization serious enough to build power electronics or energy storage systems at scale has a post-incident review process. Most of them produce a document, a list of action items, and, six months later, a process that is not meaningfully different from before the incident. The gap between organizations where this genuinely works and organizations where it doesn't isn't effort or intelligence — it's what the post-mortem process is structurally allowed to conclude, and whether the organization's incentives support acting on that conclusion once it's uncomfortable.
 
 ## The post-mortem that stops at the proximate cause
 

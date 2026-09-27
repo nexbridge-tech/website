@@ -4429,7 +4429,12 @@ MOBILE MENU
 
 }
 
-@media(max-width:768px){
+@media(max-width:1024px){
+
+.navbar > nav{position:absolute;}
+.navbar .member-nav-link{display:none;}
+.navbar .brand{margin-right:auto;min-width:0;}
+.navbar .brand-logo{height:38px;max-width:100%;}
 
 .menu-toggle{
 
@@ -5710,15 +5715,29 @@ box-shadow:var(--shadow-lg);
     }
 
     .header .btn-primary{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        min-height:44px;
+        padding:9px 12px;
+        font-size:12px;
+    }
+
+    .header-contact-suffix{
         display:none;
     }
 
     .navbar{
-        gap:10px;
+        gap:6px;
+    }
+
+    .navbar > nav{
+        position:absolute;
     }
 
     .brand{
         min-width:0;
+        flex:1;
         margin-right:auto;
     }
 
@@ -5729,7 +5748,7 @@ box-shadow:var(--shadow-lg);
 
     .search-trigger,
     .menu-toggle{
-        width:44px;
+        width:40px;
         height:44px;
     }
 

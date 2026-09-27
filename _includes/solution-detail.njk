@@ -16,8 +16,11 @@ permalink: "solutions/{{ page.fileSlug }}.html"
 <div class="container" style="max-width:760px">
 
 {% if image %}
-<img class="card-photo" style="aspect-ratio:16/9" src="{{ image }}" alt="{{ title }}">
+<img class="card-photo" style="aspect-ratio:{% if manufacturing_service %}3/2{% else %}16/9{% endif %}" src="{{ image }}" alt="{{ image_alt or title }}">
+{% if image_caption %}<p class="mfg-image-note">{{ image_caption }}</p>{% endif %}
 {% endif %}
+
+{% if manufacturing_service %}<div class="mfg-detail-links"><a href="/solutions/manufacturing-services-vietnam.html">← All manufacturing services</a><a href="/contact.html?service={{ manufacturing_service }}#project-inquiry">Request a quote ↗</a></div>{% endif %}
 
 <div class="article-body">
 {{ content | safe }}

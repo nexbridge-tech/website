@@ -20,37 +20,52 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
     Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self' https://identity.netlify.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://identity.netlify.com https://api.netlify.com https://*.supabase.co; form-action 'self' https://api.web3forms.com; frame-ancestors 'self'; base-uri 'self'"
 
-# Explicit rewrites so clean URLs (without .html) always work reliably,
-# regardless of the "Pretty URLs" dashboard setting's behavior.
+# Keep alternate entry URLs aligned with the canonical URLs in the sitemap.
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/contact"
   to = "/contact.html"
-  status = 200
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/solutions"
   to = "/solutions.html"
-  status = 200
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/industries"
   to = "/industries.html"
-  status = 200
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/partners"
-  to = "/partners.html"
-  status = 200
+  to = "/solutions.html"
+  status = 302
+
+[[redirects]]
+  from = "/partners.html"
+  to = "/solutions.html"
+  status = 302
 
 [[redirects]]
   from = "/about"
   to = "/about.html"
-  status = 200
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/knowledge"
   to = "/knowledge.html"
-  status = 200
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/login"

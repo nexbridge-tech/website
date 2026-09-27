@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Grid-Scale BESS Deployment: What Actually Goes Wrong Between Cell and Commissioning"
 date: 2026-08-01
+updated: 2026-09-27
 tags: ["Energy Storage", "Lessons Learned", "Engineering Journal"]
 topic: "Energy Storage Systems"
 excerpt: "A grid-scale battery energy storage project doesn't fail at the cell level. It fails at the seams — between cell and module, module and rack, rack and PCS, PCS and grid. A field-level look at where BESS integration actually breaks."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/ess-integration-lessons-cell-to-commissioning.sv
 draft: false
 ---
 
-A battery cell datasheet is the easiest part of a BESS project to get right. Cycle life, capacity, internal resistance, temperature curves — all of it is measured, published, and comparable across suppliers. The problems that actually delay a grid-scale battery energy storage system (BESS) project almost never come from the cell itself. They come from the seams: cell to module, module to rack, rack to PCS, PCS to grid, and grid to dispatch. This is a field-level walk through where those seams tend to open up, from initial cell qualificationcell-to-commissioning.svg)
+A battery cell datasheet is the easiest part of a BESS project to get right. Cycle life, capacity, internal resistance, temperature curves — all of it is measured, published, and comparable across suppliers. The problems that actually delay a grid-scale battery energy storage system (BESS) project almost never come from the cell itself. They come from the seams: cell to module, module to rack, rack to PCS, PCS to grid, and grid to dispatch. This is a field-level walk through where those seams tend to open up, from initial cell qualification through commissioning.
 
 ## Cell and module qualification: the variance problem
 

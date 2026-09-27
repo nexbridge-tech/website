@@ -2,6 +2,7 @@
 layout: article.njk
 title: "What Actually Earns an Engineer Ownership of Ambiguous Problems"
 date: 2026-08-03
+updated: 2026-09-27
 tags: ["Career Development", "Engineering Journal"]
 topic: "Career & Culture"
 excerpt: "Every organization says it wants engineers who can own ambiguous problems. Very few can describe what actually earns that trust, beyond tenure — and the engineers who get handed the genuinely undefined problems tend to share a specific, learnable pattern that has very little to do with technical skill alone."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/what-earns-ownership-of-ambiguous-problems.svg"
 draft: false
 ---
 
-Every engineering organization says it wants people who can "own ambiguous problems" — the ones without a clear spec, a known owner, or an obvious first step. Very few can describe what actually earns an engineer that trust, and the default explanation — tenure, seniority, a track record of shipped work — doesn't hold up well against direct observation. Plenty of senior, technically excellent engineers never get handed the genuinely undefined problems; plenty of relatively junior engineers do. The difference tends to come down to a specific, learnable pattern, and it has surprisingly little to do with raw tecus-problems.svg)
+Every engineering organization says it wants people who can "own ambiguous problems" — the ones without a clear spec, a known owner, or an obvious first step. Very few can describe what actually earns an engineer that trust, and the default explanation — tenure, seniority, a track record of shipped work — doesn't hold up well against direct observation. Plenty of senior, technically excellent engineers never get handed the genuinely undefined problems; plenty of relatively junior engineers do. The difference tends to come down to a specific, learnable pattern, and it has surprisingly little to do with raw technical skill.
 
 ## The pattern isn't "has the most answers"
 

@@ -1,0 +1,11 @@
+<div class="mfg-cards">
+{% for service in manufacturing.services %}
+<article class="mfg-card">
+<a class="mfg-card-image" href="{{ service.url }}" tabindex="-1" aria-hidden="true"><img src="/assets/images/manufacturing/{{ service.image }}.webp" alt="" width="1536" height="1024" loading="lazy"></a>
+<div class="mfg-card-body"><span class="mfg-kicker">{{ service.number }} / {{ service.label }}</span>
+<h3><a href="{{ service.url }}">{{ service.title }}</a></h3>
+<p>{{ service.description }}</p><p class="mfg-card-scope">{{ service.scope }}</p>
+<a class="mfg-text-link" href="{{ service.url }}">Explore service <span aria-hidden="true">↗</span></a></div>
+</article>
+{% endfor %}
+</div>

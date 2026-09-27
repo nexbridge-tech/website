@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Recall Patterns in EV Power Electronics: What the Public Record Actually Shows"
 date: 2026-07-27
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Manufacturing", "Engineering Journal"]
 topic: "Automotive & EV Power Electronics"
 excerpt: "Public recall and service-bulletin data across the EV industry clusters around a small number of recurring root-cause categories. Almost none of them are exotic — most are the same integration and manufacturing-variance problems every program is exposed to, just discovered after the fact instead of before."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/recall-patterns-ev-power-electronics-public-reco
 draft: false
 ---
 
-Public recall filings and technical service bulletins across the EV industry, viewed in aggregate rather than incident by incident, cluster around a fairly small number of recurring root-cause categories. This isn't a criticism of any specific manufacturer — every company building high-voltage power electronics at automotive volume is exposed to the same categories of risk, because the categories come from the underlying physics and manufacturing realities of the technology, not from any one company's specific process. What's useful about looking at the pattern in aggregate is that it shows which categories of problem are common enough to plan for explicitly, rather than treating each one as a surprising, one-off event when it eventually shows up on acs-public-record.svg)
+Public recall filings and technical service bulletins across the EV industry, viewed in aggregate rather than incident by incident, cluster around a fairly small number of recurring root-cause categories. This isn't a criticism of any specific manufacturer — every company building high-voltage power electronics at automotive volume is exposed to the same categories of risk, because the categories come from the underlying physics and manufacturing realities of the technology, not from any one company's specific process. What's useful about looking at the pattern in aggregate is that it shows which categories of problem are common enough to plan for explicitly, rather than treating each one as a surprising, one-off event when it eventually shows up on a specific program.
 
 ## The categories that recur
 

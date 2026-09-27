@@ -2,6 +2,7 @@
 layout: article.njk
 title: "What a Risk Register Looks Like Six Months Before a Recall"
 date: 2026-07-23
+updated: 2026-09-27
 tags: ["Automotive / EV Powertrain", "Energy Storage", "Engineering Journal"]
 topic: "Engineering Consulting & Process"
 excerpt: "In post-incident reviews, the risk register almost never shows a completely blank space where the failure should have been flagged. It shows a row that was open, tracked, deprioritized, and eventually closed for reasons that made sense at the time."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/risk-register-six-months-before-a-recall.svg"
 draft: false
 ---
 
-Post-incident reviews on major field failures have a recurring, uncomfortable pattern: pulling the risk register from six months before the incident almost never reveals a blank space where the eventual failure should have been. It reveals a row. Sometimes several rows, related to the eventual failure mode from different angles, each one individually reasonable to have deprioritized at the time, collectively describing exactly the failure that eventuall-a-recall.svg)
+Post-incident reviews on major field failures have a recurring, uncomfortable pattern: pulling the risk register from six months before the incident almost never reveals a blank space where the eventual failure should have been. It reveals a row. Sometimes several rows, related to the eventual failure mode from different angles, each one individually reasonable to have deprioritized at the time, collectively describing exactly the failure that eventually happened.
 
 ## The risk that got closed for a good reason
 

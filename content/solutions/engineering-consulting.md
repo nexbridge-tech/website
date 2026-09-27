@@ -26,7 +26,7 @@ Technology evaluation starts with the application's real operating envelope and 
 
 ## Supplier matching and vetting
 
-Supplier matching means vetting a manufacturer or technology partner against the application's actual requirements — qualification documentation, production capacity at the volume the program actually needs, compliance track record — not just price and lead time, which is where supplier qualification gaps that only show up at volume tend to originate.
+Supplier matching means vetting a manufacturer or technology supplier against the application's actual requirements — qualification documentation, production capacity at the volume the program actually needs, compliance track record — not just price and lead time, which is where supplier qualification gaps that only show up at volume tend to originate.
 
 ## Compliance and process alignment
 

@@ -37,13 +37,13 @@ module.exports = class {
       {
         title: "About",
         url: "/about.html",
-        description: "About NexBridge Solutions — our mission, focus areas and how we work with customers and partners.",
+        description: "About NexBridge Solutions — our mission, focus areas and how we work with customers.",
         type: "Page",
       },
       {
         title: "Contact",
         url: "/contact.html",
-        description: "Get in touch with NexBridge for new inquiries, partnerships or technical support.",
+        description: "Get in touch with NexBridge for new inquiries or technical support.",
         type: "Page",
       }
     );

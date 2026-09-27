@@ -2,6 +2,7 @@
 layout: article.njk
 title: "Why the Same Five Failure Modes Keep Showing Up Across Different BESS Projects"
 date: 2026-07-30
+updated: 2026-09-27
 tags: ["Energy Storage", "Lessons Learned", "Engineering Journal"]
 topic: "Energy Storage Systems"
 excerpt: "Different developers, different suppliers, different sites — and the commissioning issues that delay grid-scale storage projects cluster around a remarkably narrow set of root causes, most of which are known and avoidable before equipment ever ships."
@@ -9,7 +10,7 @@ image: "/assets/images/diagrams/same-five-failure-modes-across-bess-projects.svg
 draft: false
 ---
 
-Across grid-scale battery energy storage projects with different developers, different equipment suppliers, and different sites, the specific issues that delay commissioning cluster around a surprisingly narrow set of recurring root causes. This is useful information precisely because it means most commissioning delay on a new project is not a novel problem — it's a known category that a well-scoped pre-commissioning plan can catch before equipmeacross-bess-projects.svg)
+Across grid-scale battery energy storage projects with different developers, different equipment suppliers, and different sites, the specific issues that delay commissioning cluster around a surprisingly narrow set of recurring root causes. This is useful information precisely because it means most commissioning delay on a new project is not a novel problem — it's a known category that a well-scoped pre-commissioning plan can catch before equipment ever ships to site.
 
 ## 1. Multi-vendor communication protocol mismatches
 
